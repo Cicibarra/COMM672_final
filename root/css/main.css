@@ -1,27 +1,62 @@
-/* Reset Styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, input, button, textarea, select, fieldset, legend {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Global Styles */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  margin-bottom: 1rem;
+header,
+footer {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-p {
-  margin-bottom: 1rem;
+header h3 {
+    color: #666;
 }
 
-ul, ol {
-  margin-bottom: 1rem;
+header h1 {
+    color: #333;
+    margin: 10px 0;
+}
+
+header p,
+footer p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main {
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+footer h1 {
+    color: #333;
+    margin: 10px 0;
 }

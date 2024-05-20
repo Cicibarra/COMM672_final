@@ -1,0 +1,107 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+ </head>
+ <body class="bg-gray-800 flex justify-center items-center h-screen">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+   <div class="grid grid-cols-2 gap-8">
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      BILLING ADDRESS
+     </h2>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Full name
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Enter name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Email
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Enter email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Address
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Enter address" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       City
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Enter City" type="text"/>
+     </div>
+     <div class="flex gap-4 mb-4">
+      <div class="w-1/2">
+       <label class="block text-gray-700">
+        State
+       </label>
+       <select class="w-full p-2 border border-gray-300 rounded">
+        <option>
+         Choose State..
+        </option>
+       </select>
+      </div>
+      <div class="w-1/2">
+       <label class="block text-gray-700">
+        Zip code
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded" placeholder="Zip code" type="text"/>
+      </div>
+     </div>
+    </div>
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      PAYMENT
+     </h2>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Accepted Card
+      </label>
+      <div class="flex space-x-2">
+       <img alt="VISA card" class="h-8" src="https://placehold.co/64x32?text=VISA"/>
+       <img alt="MasterCard" class="h-8" src="https://placehold.co/64x32?text=MasterCard"/>
+       <img alt="AMEX card" class="h-8" src="https://placehold.co/64x32?text=AMEX"/>
+      </div>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Credit Card Number
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Enter card number" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Exp Month
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Enter Month" type="text"/>
+     </div>
+     <div class="flex gap-4 mb-4">
+      <div class="w-1/2">
+       <label class="block text-gray-700">
+        Exp Year
+       </label>
+       <select class="w-full p-2 border border-gray-300 rounded">
+        <option>
+         Choose Year..
+        </option>
+       </select>
+      </div>
+      <div class="w-1/2">
+       <label class="block text-gray-700">
+        CVV
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded" placeholder="CVV" type="text"/>
+      </div>
+     </div>
+     <button class="w-full bg-gray-700 text-white p-2 rounded">
+      Proceed to Checkout
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

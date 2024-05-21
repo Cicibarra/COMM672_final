@@ -132,11 +132,11 @@ img {
 /*-----Nav-------*/
 nav {
     position: absolute;
-    top: 90px;
+    top: 115px;
     /*    left: 0;*/
     right: 0;
-    width: 180px;
-    background-color: var(--neutral-dk-color);    
+    width: 200px;
+    background-color: var(--primary-color);    
 }
 
 nav ul {

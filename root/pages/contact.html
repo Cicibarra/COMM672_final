@@ -19,7 +19,7 @@
 <body>
     <header>
         <section class="menuWrap">
-           <a href="../index.html"><img src="images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+           <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
 <!--<a href="index.html"></a> modified to move this up to fix logo link-->
             <input type="checkbox" id="checkbox">
             <nav>
@@ -56,7 +56,7 @@
                     EMAIL is the most reliable form of contact.</p>
                 <p>Assistant Club Director: Lawrence “Law” Ortiguerra<br>
                     lawrence.ortiguerra@gmail.com Send</p>
-                <h3>We would love to hear from you. Please use the form below to reach out and to get information.
+                <h3>We would love to hear from you. Please use the form below to reach out and to get additional information.
                 </h3>
                 <!--<img src="images/LJVC_gym_optimized.jpg" alt="girls playing volleyball inside a gym">-->
             </article>
@@ -73,7 +73,48 @@
                         <label for="question">Your question or message: </label>
                         <textarea id="question" name="question" rows="8"></textarea>
                     </fieldset>
-                    <input type="submit">
+                    <fieldset id="check-all"> 
+                    <legend>Please check all that apply</legend>                
+                    <ul class="formGroup radCheck" id="additionalInfo">
+                      <li>
+                          <label for="girlsClasses">
+                              <input type="checkbox" id="girlsClasses" name="additionalInfo">
+                              <span>Girls Classes</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="boysClases">
+                              <input type="checkbox" id="boysClasses" name="additionalInfo">
+                              <span>Boys Classes</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="girlsTeams">
+                              <input type="checkbox" id="girlsTeams" name="additionalInfo">
+                              <span>Girls Teams</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="boysTeams">
+                              <input type="checkbox" id="boysTeams" name="additionalInfo">
+                              <span>Boys Teams</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="privateCoaching">
+                              <input type="checkbox" id="privateCoaching" name="additionalInfo">
+                              <span>Private Coaching</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="summerClinics">
+                              <input type="checkbox" id="summerClinics" name="additionalInfo">
+                              <span>Summer Clinics</span>
+                          </label>
+                      </li>
+                  </ul>
+                  </fieldset>
+                  <input type="submit">
                 </form>
             </section>
 

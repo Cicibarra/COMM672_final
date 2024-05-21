@@ -1,29 +1,36 @@
 <<<<<<< Updated upstream
 /* Global Styles */
 
-root { 
-}
+root {}
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-ul, ol {
-  margin-bottom: 1rem;
+ul,
+ol {
+    margin-bottom: 1rem;
 }
+
 =======
+
 /* Global variables */
 :root {
     /* typography */
@@ -34,23 +41,42 @@ ul, ol {
     --fw-b: 700;
     --fs-base: 1rem;
     --line-h: 1.5;
-    
+
     /*    Colors   */
-    --primary-color: #0077BE; 
+    --primary-color: #0077BE;
     --secondary-color: #008080;
     --neutral-lt-color: #fff;
     --accent-color: #EBC76A;
     --text-color: #1E1E1E;
-    --neutral-dk-color: #0077BE; 
-;
-    
-    
+    --neutral-dk-color: #0077BE;
+    ;
+
+
     /*    helper   */
     --spacer: 1rem;
     --spacer-dbl: calc(var(--spacer) * 2);
     --border-radius: 5px;
     --shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-   
+}
+
+body {
+        background-color: var(--neutral-lt-color);
+        color: var(--text-color);
+        font-family: var(--headline-font);
+        font-weight: var(--fw-l);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        line-height: var(--line-h);
+    }
+h1 {
+    font-size: 4.8em;
+    text-shadow: var(--shadow);
+    
+    
+}
 
 
->>>>>>> Stashed changes
+
+    > > > > > > > Stashed changes

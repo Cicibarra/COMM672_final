@@ -1,24 +1,93 @@
-/* Global Styles */
+/*
+<<<<<<< Updated upstream
+ Global Styles 
 
-root { 
-}
+root {}
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-ul, ol {
-  margin-bottom: 1rem;
+ul,
+ol {
+    margin-bottom: 1rem;
 }
+
+=======
+*/
+
+/* Global variables */
+:root {
+    /* typography */
+    --primary-font: "Roboto", sans-serif;
+    --headline-font: "Open Sans", sans-serif;
+    --fw-l: 300;
+    --fw-m: 500;
+    --fw-b: 700;
+    --fs-base: 1rem;
+    --line-h: 1.5;
+
+    /*    Colors   */
+    --primary-color: #0077BE;
+    --neutral-lt-color: #fff;
+    --accent-color: #EBC76A;
+    --text-color: #1E1E1E;
+    
+    ;
+
+
+    /*    helper   */
+    --spacer: 1rem;
+    --spacer-dbl: calc(var(--spacer) * 2);
+    --border-radius: 5px;
+    --shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+body {
+        background-color: var(--neutral-lt-color);
+        color: var(--text-color);
+        font-family: var(--headline-font);
+        font-weight: var(--fw-l);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        line-height: var(--line-h);
+    }
+
+header {
+    background-color: var(--neutral-lt-color);
+    padding: var(--spacer);
+    border-bottom: solid 10px var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-shadow: var(--shadow);
+    font-family: var(--primary-font);
+    font-weight: var(--fw-m);
+    
+    
+}
+
+
+
+    > > > > > > > Stashed changes

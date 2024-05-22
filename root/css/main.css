@@ -49,7 +49,6 @@ ol {
     --neutral-lt-color: #fff;
     --accent-color: #EBC76A;
     --text-color: #1E1E1E;
-    
     ;
 
 
@@ -83,10 +82,91 @@ h1 {
     font-size: 3.5em;
     text-shadow: var(--shadow);
     font-family: var(--primary-font);
-    font-weight: var(--fw-m);
-    
+    font-weight: var(--fw-m); 
     
 }
+
+main {
+    margin: auto;
+    max-width: 80%;
+}
+
+/*--------menu-----------*/
+.menuWrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: calc(var(--spacer)/2);
+}
+
+.menuWrap i {
+    color: var(--text-color);
+}
+
+/*-----Nav-------*/
+nav {
+    position: absolute;
+    top: 90px;
+    /*    left: 0;*/
+    right: 0;
+    width: 180px;
+    background-color: var(--neutral-dk-color);    
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav ul li {
+    border-bottom: solid 1px var(--accent-color);
+}
+
+nav ul a {
+    display: block;
+    padding: var(--spacer);
+    color: var(--neutral-lt-color);
+    text-decoration: none;
+    letter-spacing: .06em;
+    font-size: calc(var(--fs-base) * 1.1);
+}
+
+nav ul a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+/*-----hamburger and close X ---------*/
+.menuIcon,
+.menuIconClose {
+    font-size: calc(var(--spacer)*1.5);
+    color: var(--text-color);
+}
+
+.menuIconClose {
+    display: none;
+}
+
+#checkbox {
+    margin-left: auto;
+    display: none;
+}
+
+#checkbox:checked ~ nav ul {
+    display: block;
+    max-height: 440px;
+    transition: all .5s;
+}
+
+#checkbox:checked ~ label .menuIcon {
+    display: none;
+}
+
+#checkbox:checked ~ label .menuIconClose {
+    display: block;
+}
+
+
 
 
 

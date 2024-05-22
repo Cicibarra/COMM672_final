@@ -1,43 +1,10 @@
-/*
-<<<<<<< Updated upstream
- Global Styles 
 
-root {}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-    margin-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-ul,
-ol {
-    margin-bottom: 1rem;
-}
-
-=======
-*/
 
 /* Global variables */
 :root {
     /* typography */
     --primary-font: "Roboto", sans-serif;
-    --headline-font: "Open Sans", sans-serif;
+    --headline-font: "Roboto", sans-serif;
     --fw-l: 300;
     --fw-m: 500;
     --fw-b: 700;
@@ -49,14 +16,13 @@ ol {
     --neutral-lt-color: #fff;
     --accent-color: #EBC76A;
     --text-color: #1E1E1E;
-    ;
 
 
     /*    helper   */
     --spacer: 1rem;
     --spacer-dbl: calc(var(--spacer) * 2);
     --border-radius: 5px;
-    --shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    --shadow: 2px 2px 6px rgba(0, 0, 0, .3);
 }
 
 body {
@@ -78,18 +44,32 @@ header {
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 3.5em;
-    text-shadow: var(--shadow);
-    font-family: var(--primary-font);
-    font-weight: var(--fw-m); 
-    
-}
-
 main {
     margin: auto;
     max-width: 80%;
 }
+
+.logo {
+    width: 180px;
+    box-shadow: none;
+}
+h1 {
+    font-size: 3.5em;
+    text-shadow: var(--shadow);
+    font-family: var(--primary-font);
+    font-weight: var(--fw-m);
+    text-shadow: var(--shadow);
+    
+}
+
+h2, h3 {
+    font-weight: var(--fw-b);
+    font-family: var(--headline-font);
+    color: var(--text-color);
+}
+
+p {}
+
 
 /*--------menu-----------*/
 .menuWrap {
@@ -106,11 +86,10 @@ main {
 /*-----Nav-------*/
 nav {
     position: absolute;
-    top: 90px;
-    /*    left: 0;*/
+    top: 115px;
     right: 0;
     width: 180px;
-    background-color: var(--neutral-dk-color);    
+    background-color: var(--primary-color);    
 }
 
 nav ul {
@@ -165,7 +144,6 @@ nav ul a:hover {
 #checkbox:checked ~ label .menuIconClose {
     display: block;
 }
-
 
 
 

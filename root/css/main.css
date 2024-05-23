@@ -35,6 +35,7 @@ body {
         height: 100vh;
         width: auto;
         line-height: var(--line-h);
+    font-size: 
     }
 
 header {
@@ -70,6 +71,9 @@ h2, h3 {
 
 p {}
 
+.blue_Aside h1 {
+    color: var(--neutral-lt-color);
+}
 
 /*--------menu-----------*/
 .menuWrap {

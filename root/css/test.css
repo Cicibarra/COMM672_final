@@ -38,12 +38,12 @@ body {
 
 header {
     background-color: var(--neutral-lt-color);
-    /*    color: var(--secondary-color);*/
     padding: var(--spacer);
     border-bottom: solid 10px var(--primary-color);
     margin-bottom: 0;
-    width: 500px;
+    width: 100%;
 }
+
 
 main {
     margin: auto;
@@ -61,31 +61,38 @@ h3 {
     font-weight: var(--fw-m);
     font-family: var(--headline-font);
     color: var(--text-color);
-    text-shadow: var(--shadow);
+    line-height: calc(var(--line-h)/1.2);
 }
 
 h1 {
     font-size: calc(var(--fs-base) * 3.5);
     margin-top: calc(var(--spacer) / 2);
+    margin-bottom: calc(var(--spacer) / 3);
     color: var(--text-color);
-    font-weight: var(--fw-b);
+/*
+    line-height: calc(var(--line-h)/1.2);
+    
+*/
 }
 
 h2 {
-    font-size: calc(var(--fs-base) * 1.8);
+    font-size: calc(var(--fs-base) * 2.8);
     margin-top: calc(var(--spacer) / 2);
+    font-weight: 600;
+  ;
 }
 
 h3 {
-    font-size: calc(var(--fs-base) * 1.3);
-    margin-top: calc(var(--spacer));
+    font-size: calc(var(--fs-base) * 1.1);
+    margin-top: calc(var(--spacer)*2);
     margin-bottom: var(--spacer);
 }
 
 p {
     font-family: var(--primary-font);
     font-size: calc(var(--fs-base)* 1.1);
-    margin-bottom: var(--spacer);
+    margin: var(--spacer) 0;
+    
 }
 
 img {
@@ -110,17 +117,29 @@ img {
 }
 .hero_h1 {
     line-height: calc(var(--line-h)* .8);
-    margin-top: calc(var(--spacer) / 2);
+    margin: calc(var(--spacer)*2);
+    text-align: center;
+    text-shadow: var(--shadow);
+   
     
 }
 .hero_img {
      width: 550px;
 }
 
+.hero_cta p {
+    text-align: center;
+    margin: 5px calc(var(--spacer)*6);
+    font-weight: 400;
+    
+    
+}
 /*------First two articles------*/
-    background-color: var(--neutral-lt-color);
-    color: var(--text-color);
-    padding: var(--spacer);
+    
+.empow_img {
+    width: 100%;
+    
+}
 /*-----aside-------*/
 
 .blue_Aside {
@@ -129,7 +148,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 700px; 
-    width: 450px; 
+    
 }
 .blue_Aside h1 {
     color: var(--neutral-lt-color);
@@ -141,24 +160,23 @@ img {
     margin-top: calc(var(--spacer)*1.6);
 }
 
-aside .btns {
-    color: var(--neutral-lt-color);
-    margin-bottom: var(--spacer);  
-}
 
 .blue_img {
-    width: 450px;
+    width: 100%;
 }
+
 /*----buttons------*/
 .btns {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 3px;
     font-size: calc(var(--fs-base) * .8);
+    margin-top: 10px;
+    
+    
+
 }
-
-
 
 .Learn_btn,
 .In_btn,
@@ -166,7 +184,7 @@ aside .btns {
     border: solid 1px var(--text-color);
     text-decoration: none;
     box-shadow: var(--shadow);
-    padding: 10px 30px;
+    padding: 8px 45px; 
     margin: 10px;
     cursor: pointer;
 }
@@ -182,6 +200,7 @@ aside .btns {
 
 .Learn_btn {
     background-color: var(--neutral-lt-color);
+    padding: 
 }
 
 /*--------menu-----------*/
@@ -260,6 +279,8 @@ nav ul a:hover {
     display: block;
 }
 
+
+
 /*---------CTA with blue background---------*/
 .blue_Aside {
     background-color: var(--primary-color);
@@ -270,12 +291,6 @@ nav ul a:hover {
     padding: calc(var(--spacer)* 2);    
 }
 
-/*-----------form-----------*/
-/*
-.contact_form {
-   
-}
-*/
 
 /*-----------Map-------------*/
 .mapWrapper {
@@ -313,7 +328,7 @@ footer {
 }
 
 /*------Media Queries------------*/
-/* Set media query to 980 to accomodate the large menu with 7 items. While looking at chase.com i noticed they kept the hamburger menu up unitil it could accomodate all items in the nav  */
+
 @media screen and (min-width: 980px) {
     section.locations {
         display: flex;

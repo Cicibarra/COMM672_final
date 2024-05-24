@@ -162,12 +162,6 @@ nav ul a:hover {
     background-color: var(--primary-color);
     color: var(--accent-color);
 }
-/*
-scoped variable to change from dark background on dropdown menu to the primary color
-.nav_change {
-    --neutral-dk-color: var(--primary-color);
-}
-*/
 
 /*-----hamburger and close X ---------*/
 .menuIcon,
@@ -206,15 +200,13 @@ scoped variable to change from dark background on dropdown menu to the primary c
     margin: var(--spacer-dbl) 0;
     border-bottom: solid 10px var(--accent-color);
     border-top: solid 10px var(--accent-color);
-    padding: calc(var(--spacer)* 2);
-/*    max-width: 100% !important;*/
-    
+    padding: calc(var(--spacer)* 2);    
 }
 
+/*-----------form-----------*/
 /*
-using scoped variable to change background color from blue to gold, i prefer the blue though, don't like gold here 
-.blue_Aside {
-    --primary-color: var(--accent-color);
+.contact_form {
+   
 }
 */
 
@@ -234,19 +226,6 @@ using scoped variable to change background color from blue to gold, i prefer the
     width: 100%;
     height: 100%;
 }
-
-/*------  dark theme --------*/
-/*  again, i don't like these color changes, but trying to do the assignment to use themed variables, got it to work, but don't like the look :/  changed article background, article text and one button background and text. Looks like a useful tool! ---*/
-
-/*
-.invert {
-    --bg: var(--neutral-dk-color);
-    --text-color: var(--neutral-lt-color);
-    --btn-bg: var(--primary-color);
-    --btn-text: var(--neutral-lt-color);
-}
-*/
-
 
 /*----------footer-----------*/
 footer {

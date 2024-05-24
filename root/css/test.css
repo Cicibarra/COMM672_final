@@ -47,12 +47,14 @@ header {
 
 main {
     margin: auto;
-    max-width: 80%;
+/*    max-width: 80%;*/
 }
 article {
     background-color: var(--neutral-lt-color);
     color: var(--text-color);
     padding: var(--spacer);
+    max-width: 80%;
+    margin: auto;
 }
 
 h1,
@@ -130,8 +132,7 @@ img {
 .hero_cta p {
     text-align: center;
     margin: 5px calc(var(--spacer)*6);
-    font-weight: 400;
-    
+    font-weight: 400;  
     
 }
 /*------First two articles------*/
@@ -140,6 +141,54 @@ img {
     width: 100%;
     
 }
+
+/*-------testimonial section-----------*/
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    padding-top: 50px;
+    
+}
+
+.stars li{
+    width: 35px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.test_sec p {
+   max-width: 80%;
+   margin: auto;
+   font-size: calc(var(--fs-base)* 2);
+    font-weight: var(--fw-m);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.test_parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.parent_pic {
+    box-shadow: none;
+    width: 105px;
+}
+
+.grid-text {
+    width: 150px
+    font-size: .8em;
+}
+
+
+
+
+
 /*-----aside-------*/
 
 .blue_Aside {
@@ -173,8 +222,6 @@ img {
     gap: 3px;
     font-size: calc(var(--fs-base) * .8);
     margin-top: 10px;
-    
-    
 
 }
 

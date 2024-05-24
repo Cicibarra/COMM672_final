@@ -309,6 +309,7 @@ footer {
 .foot_ico a {
     color: var(--text-color);
     padding: calc(var(--spacer) / 2);
+    text-decoration: none;
 }
 
 /*------Media Queries------------*/

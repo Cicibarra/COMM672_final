@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Final Project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <header>
+        <section class="menuWrap">
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+            <!--<a href="index.html"></a> modified to move this up to fix logo link-->
+            <input type="checkbox" id="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/locations.html">Location</a></li>
+                    <li><a href="../pages/ClassesAndTeams.html">Teams & Classes</a></li>
+                    <li><a href="pages/schedule.html">Schedule</a></li>
+                    <li><a href="pages/register_prices.html">Payment & Pricing</a></li>
+                    <li><a href="pages/FAQ.html">FAQ</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa-solid fa-bars menuIcon"></i>
+                <i class="fa-solid fa-xmark menuIconClose"></i>
+            </label>
+        </section>
+        <section class="btns">
+            <a class="Up_btn" href="pages/sign_up_form.html">Sign Up</a>
+            <a class="In_btn" href="pages/about.html">Learn More</a>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="contact">
+            <article>
+                <h2>Contact Us</h2>
+                <h3>La Jolla Volleyball Club</h3>
+                <img src="../images/ljvcTeamCoaches_opt.jpg" alt="la jolla volleyball club coaches and team">
+                <p>We would love to hear from you. Please use the form below to reach out and to get additional information.</p>
+            </article>
+            <section>
+
+                <!--    form         -->
+
+                <form action="mailto:csherndon@yahoo.com" method="post" id="saveForm" class="contact_form">
+                    <!--    text and text area fields          -->
+                    <p>Fields indicated with an asterick * are required.</p>
+                    <fieldset id="contact_info">
+                        <legend>Contact information</legend>
+
+                        <label for="fname">First name *</label>
+                        <input type="text" id="fname" name="fname" value="" required autofocus>
+
+                        <label for="lname">Last name *</label>
+                        <input type="text" id="lname" name="lname" value="" required>
+
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" value="" required>
+
+                        <label for="phone">Telephone number</label>
+                        <input type="tel" id="phone" name="phone" value="">
+
+                        <label for="question">Your question or message *</label>
+                        <textarea id="question" name="question" value="" rows="8" required></textarea>
+                    </fieldset>
+
+                    <!-- radio buttons-->
+                    <fieldset id="boys_girls">
+                        <legend>Select boys, girls or both</legend>
+                        <input type="radio" id="boys" name="boys_girls" value="boys">
+                          <label for="boys">Boys</label>
+                         
+                          <input type="radio" id="girls" name="boys_girls" value="girls">
+                          <label for="girls">Girls</label>
+                         
+                          <input type="radio" id="both" name="boys_girls" value="both">
+                          <label for="both">Both</label>
+                    </fieldset>
+
+                    <!--      checkboxes         -->
+
+                    <fieldset id="check_all">
+                        <legend>Please check all that apply</legend>
+                        <ul class="formGroup radCheck" id="additionalInfo">
+                            <li>
+                                <input type="checkbox" id="Classes" name="additionalInfo">
+                                <label for="Classes">Classes</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="Teams" name="additionalInfo">
+                                <label for="Teams">Teams</label>
+
+                            </li>
+                            <li>
+                                <input type="checkbox" id="privateCoaching" name="additionalInfo">
+                                <label for="privateCoaching">Private Coaching</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="summerClinics" name="additionalInfo" />
+                                <label for="summerClinics">Summer Clinics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="beachVB" name="additionalInfo" />
+                                <label for="beachVB">Beach Volleyball</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <!----------dropdown list--------->
+                    <fieldset id="practice_location">
+                        <legend for="practice_location">Choose a practice location:</legend>
+                        <select name="practice_location" id="practice_location">
+                            <option value="lajolla">La Jolla High</option>
+                            <option value="mb">Mission Bay High</option>
+                            <option value="hightech">High Tech Mesa</option>
+                            <option value="kate">Kate Session Park</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" class="submit_button">
+                </form>
+            </section>
+
+            <!-- named aside to match the naming on index.html that plans to style all "asides" with a blue background and gold top and bottom. -->
+            <aside class="blue_Aside">
+            <h1>Sign Up Today!</h1>
+            <p>Experience the thrill of volleyball and improve your skills with our expert coaches.</p>
+            <section class="btns">
+                <a class="Learn_btn" href="pages/about.html">Learn More</a><a class="Up_btn" href="pages/sign_up_form.html">Register
+                </a>
+
+            </section>
+            <img src="../images/Join-Us500.jpg" alt="player hitting a ball" class="blue_img">
+        </aside>
+            <article>
+                <p>Club Director: Barb Birnbaum<br>
+                    barb@ljvolleyball.com<br></p>
+                <p>Asst Club Director: Lawrence “Law” Ortiguerra<br>
+                    lawrence.ortiguerra@gmail.com</p>
+                    <h3>La Jolla Volleyball Club</h3>
+                <p>123 Main Street<br>
+                    San Diego, CA 92037</p>
+
+                <p>lajollavb@yahoo.com<br>
+                    858.455.4597</p>                
+            </article>
+        </section>
+        <!--created a google map specific to the actual practice locations of LJVC and embedded that map-->
+                <section class="mapWrapper">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CC38g3LvKw8yYV5NxMqtASGgRv_QzAI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                </section>
+    </main>
+
+    <footer class="foot_sec">
+        <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+
+        <section class="foot_ico">
+            <a class="f_ico" href="#">
+                <i class="fab fa-facebook-f"></i></a>
+            <a class="t_ico" href="#">
+                <i class="fab fa-twitter"></i></a>
+            <a class="ig_ico" href="#">
+                <i class="fab fa-instagram"></i></a>
+            <a class="li_ico" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </section>
+
+    </footer>
+</body></html>

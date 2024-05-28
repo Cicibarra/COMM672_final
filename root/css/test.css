@@ -104,11 +104,12 @@ img {
 }
 
 .logo {
-    width: 180px;
-    box-shadow: none;
+    width: 250px;
+    box-shadow: none;  
 
 }
 
+<<<<<<< Updated upstream
 /*--------menu-----------*/
 .menuWrap {
     display: flex;
@@ -187,6 +188,8 @@ nav ul a:hover {
 
 
 
+=======
+>>>>>>> Stashed changes
 /*-------- hero cta-------*/
 .hero_cta {
     display: flex;
@@ -205,7 +208,11 @@ nav ul a:hover {
     
 }
 .hero_img {
+<<<<<<< Updated upstream
      width: 100%;
+=======
+    width: 100%;
+>>>>>>> Stashed changes
 }
 
 .hero_cta p {
@@ -220,7 +227,6 @@ nav ul a:hover {
     width: 100%;
     
 }
-
 
 /*-----aside-------*/
 
@@ -301,24 +307,34 @@ nav ul a:hover {
     font-weight: var(--fw-b);
 }
 
+
 /*-------FAQ section-----*/
 
-.FAQ_sec h1, h2 {
+.FAQ_sec h1 {
     text-align: center;
     font-size: calc(var(--fs-base) * 3.5);
     padding: 20px;
+    margin-top: 60px;
+}
+
+.FAQ_sec h2 {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 500;
 }
 
 .FAQ_sec p {
     font-family: var(--primary-font);
-    font-size: calc(var(--fs-base)* 1.8);
+    font-size: calc(var(--fs-base)* 1.4);
     margin: var(--spacer);
     text-align: center;
-    
+    padding:  0 50px;
+    font-weight: 400;
     
 }
 .FAQ_sec li {
     border-top: solid 1px var(--text-color);
+<<<<<<< Updated upstream
     margin: 40px 50px;
 }
 .contact_btn {
@@ -336,6 +352,109 @@ nav ul a:hover {
     color: var(--primary-color);
     
 }
+=======
+    margin: 40px 60px;
+    
+}
+.contact_btn {
+    border: solid 1px var(--text-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    margin: 10px;
+    width: 115px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;    
+}
+/*------Last article---------*/
+.last_art {
+    margin-top: 50px;
+}
+
+.last_art h1 {
+    text-shadow: var(--shadow);
+    font-size: 3.2;
+}
+.Grow_img {
+    margin-bottom: 60px;
+}
+/*----------- Newsletter -------------*/
+
+
+.newsletter {
+    width: 60%;
+    margin: auto;
+}
+
+.newsletter #email {
+    border-radius: calc(var(--border-radius)* 0.1);
+    border: solid 1px var(--text-color);
+    height: 36px;
+    width: 60%;
+}
+
+.newsletter h4 {
+    font-size: calc(var(--fs-base)* 0.8);
+    font-weight: var(--fw-m);
+    margin: calc(var(--spacer)* 0.8) 0 calc(var(--spacer)* 3);
+}
+    
+.submit {
+    font-size: calc(var(--fs-base));
+    color: var(--primary-color);
+    border-radius: calc(var(--border-radius)* 0.1);
+    border: solid 1px var(--text-color);
+    background-color: var(--neutral-lt-color);
+    height: 40px;
+    width: 35%;
+    gap: 20px;
+}
+.newsletter img {
+    
+}
+/*-----------Map-------------*/
+.mapWrapper {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: var(--spacer);
+}
+
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------footer-----------*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  
+    text-align: center;
+    padding: .8rem 1rem 2rem;
+    margin-top: auto;
+    border-top: solid 10px var(--accent-color);
+   
+}
+.foot_sec p{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.foot_ico a {
+    color: var(--text-color);
+    padding: calc(var(--spacer) / 2);
+    text-decoration: none;
+}
+>>>>>>> Stashed changes
 
 /*----buttons------*/
 
@@ -398,6 +517,7 @@ nav ul a:hover {
 
 
 
+<<<<<<< Updated upstream
 /*-----------Map-------------*/
 .mapWrapper {
     position: relative;
@@ -454,6 +574,8 @@ footer {
     text-decoration: none;
 }
 
+=======
+>>>>>>> Stashed changes
 /*------Media Queries------------*/
 
 @media screen and (min-width: 980px) {

@@ -303,20 +303,30 @@ nav ul a:hover {
 
 /*-------FAQ section-----*/
 
-.FAQ_sec h1, h2 {
+.FAQ_sec h1 {
     text-align: center;
     font-size: calc(var(--fs-base) * 3.5);
     padding: 20px;
+    margin-top: 60px;
+
+}
+
+.FAQ_sec h2 {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 500;
 }
 
 .FAQ_sec p {
     font-family: var(--primary-font);
-    font-size: calc(var(--fs-base)* 1.8);
+    font-size: calc(var(--fs-base)* 1.4);
     margin: var(--spacer);
     text-align: center;
-    
+    padding:  0 50px;
+    font-weight: 400;
     
 }
+
 .FAQ_sec li {
     border-top: solid 1px var(--text-color);
     margin: 40px 50px;
@@ -379,6 +389,18 @@ nav ul a:hover {
   
 }
 
+/*------Last article---------*/
+.last_art {
+    margin-top: 50px;
+}
+
+.last_art h1 {
+    text-shadow: var(--shadow);
+    font-size: 3.2;
+}
+.Grow_img {
+    margin-bottom: 60px;
+}
 
 /*----------- Newsletter -------------*/
 
@@ -387,15 +409,35 @@ nav ul a:hover {
     margin: auto;
 }
 
-.newsletter input {
-    height: 30px;
+.newsletter #email {
+    border-radius: calc(var(--border-radius)* 0.1);
+    border: solid 1px var(--text-color);
+    padding: 10px;
+/*
+    height: 36px;
+    width: 60%;
+*/
 }
 
 .newsletter h4 {
-    font-size: 
+    font-size: calc(var(--fs-base)* 0.8);
+    font-weight: var(--fw-m);
+    margin: calc(var(--spacer)* 0.8) 0 calc(var(--spacer)* 3);
+}
+    
+.submit {
+    font-size: calc(var(--fs-base));
+    color: var(--primary-color);
+    border-radius: calc(var(--border-radius)* 0.1);
+    border: solid 1px var(--text-color);
+    background-color: var(--neutral-lt-color);
+    height: 36px;
+    width: 35%;
+    gap: 20px;
+}
+.newsletter img {
     
 }
-
 
 
 /*-----------Map-------------*/

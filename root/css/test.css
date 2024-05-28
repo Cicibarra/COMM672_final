@@ -108,6 +108,85 @@ img {
     box-shadow: none;
 
 }
+
+/*--------menu-----------*/
+.menuWrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: calc(var(--spacer)/2);
+}
+
+.menuWrap i {
+    color: var(--text-color);
+}
+
+/*-----Nav-------*/
+nav {
+    position: absolute;
+    top: 115px;
+    /*    left: 0;*/
+    right: 0;
+    width: 200px;
+    background-color: var(--primary-color);    
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav ul li {
+    border-bottom: solid 1px var(--accent-color);
+}
+
+nav ul a {
+    display: block;
+    padding: var(--spacer);
+    color: var(--neutral-lt-color);
+    text-decoration: none;
+    letter-spacing: .06em;
+    font-size: calc(var(--fs-base) * 1.1);
+}
+
+nav ul a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+/*-----hamburger and close X ---------*/
+.menuIcon,
+.menuIconClose {
+    font-size: calc(var(--spacer)*1.5);
+    color: var(--text-color);
+}
+
+.menuIconClose {
+    display: none;
+}
+
+#checkbox {
+    margin-left: auto;
+    display: none;
+}
+
+#checkbox:checked ~ nav ul {
+    display: block;
+    max-height: 440px;
+    transition: all .5s;
+}
+
+#checkbox:checked ~ label .menuIcon {
+    display: none;
+}
+
+#checkbox:checked ~ label .menuIconClose {
+    display: block;
+}
+
+
+
 /*-------- hero cta-------*/
 .hero_cta {
     display: flex;
@@ -126,7 +205,7 @@ img {
     
 }
 .hero_img {
-     width: 550px;
+     width: 100%;
 }
 
 .hero_cta p {
@@ -244,12 +323,22 @@ img {
 }
 .contact_btn {
 
-    margin-top: 10px;
-    align-content: center;
-
+    border: solid 1px var(--text-color);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    width: 115px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--primary-color);
     
 }
+
 /*----buttons------*/
+
 .btns {
     display: flex;
     align-items: center;
@@ -262,7 +351,6 @@ img {
 
 .Learn_btn,
 .In_btn,
-.contact_btn,
 .Up_btn {
     border: solid 1px var(--text-color);
     text-decoration: none;
@@ -291,84 +379,22 @@ img {
   
 }
 
-/*--------menu-----------*/
-.menuWrap {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    gap: calc(var(--spacer)/2);
+
+/*----------- Newsletter -------------*/
+
+.newsletter {
+    width: 60%;
+    margin: auto;
 }
 
-.menuWrap i {
-    color: var(--text-color);
+.newsletter input {
+    height: 30px;
 }
 
-/*-----Nav-------*/
-nav {
-    position: absolute;
-    top: 115px;
-    /*    left: 0;*/
-    right: 0;
-    width: 200px;
-    background-color: var(--primary-color);    
+.newsletter h4 {
+    font-size: 
+    
 }
-
-nav ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: all .5s;
-}
-
-nav ul li {
-    border-bottom: solid 1px var(--accent-color);
-}
-
-nav ul a {
-    display: block;
-    padding: var(--spacer);
-    color: var(--neutral-lt-color);
-    text-decoration: none;
-    letter-spacing: .06em;
-    font-size: calc(var(--fs-base) * 1.1);
-}
-
-nav ul a:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-}
-
-/*-----hamburger and close X ---------*/
-.menuIcon,
-.menuIconClose {
-    font-size: calc(var(--spacer)*1.5);
-    color: var(--text-color);
-}
-
-.menuIconClose {
-    display: none;
-}
-
-#checkbox {
-    margin-left: auto;
-    display: none;
-}
-
-#checkbox:checked ~ nav ul {
-    display: block;
-    max-height: 440px;
-    transition: all .5s;
-}
-
-#checkbox:checked ~ label .menuIcon {
-    display: none;
-}
-
-#checkbox:checked ~ label .menuIconClose {
-    display: block;
-}
-
-
-
 
 
 
@@ -388,6 +414,26 @@ nav ul a:hover {
     width: 100%;
     height: 100%;
 }
+/*-------Chris' form--------*/
+
+form {
+    padding: var(--spacer);
+}
+
+#contact_info {
+    display: grid;
+    grid-auto-rows: column;
+    /*    padding: var(--spacer);*/
+}
+
+fieldset {
+    border: 2px solid var(--primary-color);
+    margin: var(--spacer);
+    border-radius: var(--border-radius);
+    font-weight: var(--fw-b);
+    padding: var(--spacer);
+}
+
 
 /*----------footer-----------*/
 footer {

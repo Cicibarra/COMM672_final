@@ -9,14 +9,43 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/test.css">
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- jQuery Statement -->
+      <script>
+          $(document).ready(function(){
+              
+              //show/hide contents in Girls Team
+              $(".girls_team .fall_season").hide();
+              $(".girls_team .spring_season").hide();        
+              $(".girlsTeamFall_img").click(function(){
+                  $(".girls_team .fall_season").fadeToggle(200); // fadeToggle = toggle with animation.
+              });
+              $(".girlsTeamSpring_img").click(function(){
+                  $(".girls_team .spring_season").fadeToggle(200);
+              });
+              
+              //show/hide contents in Boys Team
+              $(".boys_team .fall_season").hide();
+              $(".boys_team .tournaments").hide();        
+              $(".boysTeamFall_img").click(function(){
+                  $(".boys_team .fall_season").fadeToggle(200); // fadeToggle = toggle with animation.
+              });
+              $(".boysTeamTournaments_img").click(function(){
+                  $(".boys_team .tournaments").fadeToggle(200);
+              });
+              
+          }); // end document ready
+      </script>
+     
     </head>
 
     <body class="home_Body">
+     
       <header>
-          <section class="logo">
-              <img src="../images/La%20Jolla.png" alt="LJVC_logo">
-              <a href="../index.html"></a>
+        <section class="menuWrap">
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
               <input type="checkbox" id="checkbox">
               <nav>
                   <ul>
@@ -47,22 +76,21 @@
       <main>
         <section>
               <article>
-                 <img src="https://placehold.co/450x350" alt="Our Team" class="ourTeam_img">
+                 <img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">
                  <h3>Discover</h3>
                  <h1>Classes and Teams</h1>
-                 <p>Explore our wide range of classes and Teams for all skill levels and ages.</p>
-                 <a class="Learn_btn" href="about.html">Learn More</a>
-                 <a class="Up_btn" href="sign_up_form.html">Register</a>                 
+                 <p>Explore our wide range of classes and Teams for all skill levels and ages.</p>            
              </article>
         </section>
           
         <section class="girls_team">
-             <img src="https://placehold.co/450x350" alt="Girls Team" class="girlsTeam_img">
+             <img src="../images/girlsTeam_img.png" alt="Girls Team" class="girlsTeam_img">
              <h1>Girls Team</h1>
              <p>We offer two INDOOR seasons for teams: Fall (short/mini-season) and Spring (longer typical club season):</p>
              
+             <img src="../images/girlsTeamFall_img.png" alt="Girls Team Fall" class="girlsTeamFall_img">
              <article class="girls_team fall_season">
-                 <img src="https://placehold.co/450x50" alt="Girls Team Fall" class="girlsTeamFall_img">
+                 <img src="../images/girlsYouth_img.png" alt="Girls Team Fall" class="girlsYouth_img">
                  <p>FALL School teams (“mini-season”) for GIRLS in grades 5th-8th</p>
                  <ul>
                      <li>tryouts in late August</li>
@@ -72,18 +100,17 @@
              </article>
              
              <article class="girls_team fall_season">
-                 <img src="https://placehold.co/450x50" alt="Girls Team Fall" class="girlsTeamFall_img">
+                 <img src="../images/girlsAllAges_img.png" alt="Girls Team Fall" class="girlsAllAges_img">
                  <p>FALL Sunday Clinics for all ages/skill levels</p>
                  <ul>
                      <li>2 hours each Sunday (mid-August thru September) until club tryouts in early October</li>
                      <li>held at MBHS Gym, open to boys and girls, multiple courts and coaches</li>
                  </ul>
+                 <p>Click on <a class="ext_links" href="#">FALL Mini-Season</a> for more details.</p>
              </article>
              
-             <p>Click on <a class="ext_links" href="#">FALL Mini-Season</a> for more details.</p>
-             
+             <img src="../images/girlsTeamSpring_img.png" alt="Girls Team Spring" class="girlsTeamSpring_img">
              <article class="girls_team spring_season">
-                 <img src="https://placehold.co/450x50" alt="Girls Team Spring" class="girlsTeamSpring_img">
                  <p>SPRING Indoor Club Teams (PRIMARY club volleyball season) for all ages.</p>
                  <ul>
                      <li>15s-18s (9th-12th grade) have tryouts in late July, then take a club break to play on their respective high school teams (cannot play on club vb team during same time as HS team). Tournaments December through May/June.</li>
@@ -95,7 +122,7 @@
           </section>
           
           <section class="boys_team">
-             <img src="https://placehold.co/450x350" alt="Boys Team" class="boysTeam_img">
+             <img src="../images/boysTeam_img.png" alt="Boys Team" class="boysTeam_img">
              <h1>Boyes Team</h1>
              <article class="boys_team tryouts">
                  <p>TRYOUTS:  $30 tryouts fee and online registration required prior to participation.  Register for <a class="ext_links" href="#">Sunday Clinic</a> as your boys tryouts registration, please.</p>
@@ -106,8 +133,8 @@
                  </ul>
              </article>
                 
+             <img src="../images/boysTeamFall_img.png" alt="Boys Team Fall" class="boysTeamFall_img">
              <article class="boys_team fall_season">
-                 <img src="https://placehold.co/450x50" alt="Boys Team Fall" class="boysTeamFall_img">
                  <p>Fall Local Season:  approx. 5-6 practices/month, 5 local tournaments in Rancho Bernardo at Seaside VBC (SDVBC) Oct 6th – Dec 8th (dates listed below)</p>
                  <a class="ext_links" href="#">https://www.sdvbc.org/seaside-locals</a>
                  
@@ -118,30 +145,25 @@
                  <p>Travel Team: We will form a travel team for HS-age players, to compete in 16U division</p>
                  
                  <ul>
-                     <li>
                          Practices:
                          <ul>
                              <li>Sundays at La Jolla High School (LJHS) gym 4:00-6:00pm</li>
                              <li>Wednesdays or Thursdays at The Salvation Army (TSA) gym  7:00-9:00pm (check LJV calendar)</li>
                          </ul>
-                     </li>
-                     <li>
-                         Local Tournaments for Fall 2019, 14U and younger (Locals):
-                         <ul>
+                 </ul>
+             </article>
+             
+             <img src="../images/boysTeamTournaments_img.png" alt="Girls Team Tournaments" class="boysTeamTournaments_img">
+             <article class="boys_team tournaments">
+                 <p>Local Tournaments for Fall 2019, 14U and younger (Locals):</p>
+                 <ul>
                              <li>Sunday Oct 6  (PM wave 2:30-8pm)</li>
                              <li>Sunday Oct 13  (PM wave 2:30-8pm)</li>
                              <li>Sunday Oct 27  (PM wave 2:30-8pm)</li>
                              <li>Saturday Nov 16  (PM wave 2:30-8pm)</li>
                              <li>Sunday Dec 8  (PM wave 2:30-8pm)</li>
-                         </ul>
-                     </li>
                  </ul>
-                 
-                 <img src="https://placehold.co/450x50" alt="Girls Team Tournaments" class="girlsTeamTournaments_img">
                  <p>Boys LOCAL tournaments at <a class="ext_links" href="#">Seaside/San Diego Volleyball Club</a> in Rancho Bernardo</p>
-             </article>
-             
-             <article class="boys_team tournaments">
                  <a class="ext_links" href="#">Travel (SCVA) Tournaments for Fall 2019 (click for SCVA link)</a>
                  <ul>
                      <li>Boys 14U Travel/SCVA tournaments run Nov 17th through June</li>

@@ -50,13 +50,13 @@
             <article>
                 <h2>Contact Us</h2>
                 <h3>La Jolla Volleyball Club</h3>
-                <img src="../images/ljvcTeamCoaches_opt.jpg" alt="la jolla volleyball club coaches and team">
                 <p>We would love to hear from you. Please use the form below to reach out and to get additional information.</p>
             </article>
-            <section>
+                               <img src="../images/ljvcTeamCoaches_opt.jpg" alt="la jolla volleyball club coaches and team">
 
                 <!--    form         -->
 
+                <section class="contact_form">
                 <form action="mailto:csherndon@yahoo.com" method="post" id="saveForm" class="contact_form">
                     <!--    text and text area fields          -->
                     <p>Fields indicated with an asterick * are required.</p>
@@ -136,6 +136,7 @@
                 </form>
             </section>
 
+
             <!-- named aside to match the naming on index.html that plans to style all "asides" with a blue background and gold top and bottom. -->
             <aside class="blue_Aside">
             <h1>Sign Up Today!</h1>
@@ -147,12 +148,13 @@
             </section>
             <img src="../images/Join-Us500.jpg" alt="player hitting a ball" class="blue_img">
         </aside>
+           
             <article>
-                <p>Club Director: Barb Birnbaum<br>
+                <p><span>Club Director: Barb Birnbaum</span><br>
                     barb@ljvolleyball.com<br></p>
                 <p>Asst Club Director: Lawrence “Law” Ortiguerra<br>
                     lawrence.ortiguerra@gmail.com</p>
-                    <h3>La Jolla Volleyball Club</h3>
+                    <p><span>La Jolla Volleyball Club</span></p>
                 <p>123 Main Street<br>
                     San Diego, CA 92037</p>
 
@@ -160,6 +162,21 @@
                     858.455.4597</p>                
             </article>
         </section>
+         <section class="newsletter">
+              <img src="../images/LaJolla_Logo_cropped.png" alt="LJVC_logo" class="logo">
+              <h3>Join our newsletter</h3>
+              <p>Enter your email address below and click subscribe to be in the know for all thing La Jolla Volleyball Club!</p>
+
+              <form action="#" method="post" id="mainform" enctype="text/plain">
+                  <label for="email"></label>
+                  <section class="email_subscribe">
+                  <input type="text" id="email" name="email" placeholder="Enter your email">
+
+                  <input type="submit" class="subscribe" value="Subscribe"></section>
+                  <h4>By subscribing you agree to with our <a href="#">Privacy Policy</a></h4>
+                  
+                  </form>
+          </section>
         <!--created a google map specific to the actual practice locations of LJVC and embedded that map-->
                 <section class="mapWrapper">
                     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CC38g3LvKw8yYV5NxMqtASGgRv_QzAI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>

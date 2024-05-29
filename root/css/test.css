@@ -85,9 +85,10 @@ h2 {
 }
 
 h3 {
-    font-size: calc(var(--fs-base) * 1.1);
+    font-size: calc(var(--fs-base) * 1.5);
     margin-top: calc(var(--spacer)*2);
     margin-bottom: var(--spacer);
+    font-weight: 600;
 }
 
 p {
@@ -359,10 +360,8 @@ nav ul a:hover {
 
 }
 
-.Learn_btn,
-.In_btn,
-.Up_btn {
-    border: solid 1px var(--text-color);
+.Learn_btn, .In_btn, .Up_btn, .submit_button, .subscribe {
+    border: solid 2px var(--text-color);
     text-decoration: none;
     box-shadow: var(--shadow);
     margin: 10px;
@@ -380,7 +379,7 @@ nav ul a:hover {
 /*    background-color: var(--accent-color);*/
 }
 
-.Up_btn {
+.Up_btn, .submit_button {
     background-color: var(--accent-color);
 }
 
@@ -404,19 +403,33 @@ nav ul a:hover {
 
 /*----------- Newsletter -------------*/
 
+.newsletter .logo {
+    display: block;    
+    margin: auto;
+}
+.email_subscribe {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacer));
+}
+
 .newsletter {
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
 .newsletter #email {
-    border-radius: calc(var(--border-radius)* 0.1);
+/*    border-radius: calc(var(--border-radius)* 0.1);*/
     border: solid 1px var(--text-color);
-    padding: 10px;
-/*
-    height: 36px;
-    width: 60%;
-*/
+    padding: 5px;
+/*    height: 36px;*/
+/*    width: 60%;*/
+    height: 23px;
+    width: 200px;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: var(--fw-m);
 }
 
 .newsletter h4 {
@@ -425,18 +438,12 @@ nav ul a:hover {
     margin: calc(var(--spacer)* 0.8) 0 calc(var(--spacer)* 3);
 }
     
-.submit {
-    font-size: calc(var(--fs-base));
+.subscribe {
+/*    font-size: calc(var(--fs-base));*/
     color: var(--primary-color);
-    border-radius: calc(var(--border-radius)* 0.1);
+/*    border-radius: calc(var(--border-radius)* 0.1);*/
     border: solid 1px var(--text-color);
     background-color: var(--neutral-lt-color);
-    height: 36px;
-    width: 35%;
-    gap: 20px;
-}
-.newsletter img {
-    
 }
 
 
@@ -458,14 +465,34 @@ nav ul a:hover {
 }
 /*-------Chris' form--------*/
 
-form {
+span {
+    font-size: calc(var(--spacer)*1.2);
+font-weight: var(--fw-b);
+}
+.contact_form {
     padding: var(--spacer);
+}
+.contact_form p {
+    font-style: italic;
+    text-align: center;
 }
 
 #contact_info {
     display: grid;
     grid-auto-rows: column;
-    /*    padding: var(--spacer);*/
+    /*    padding: var(--spacer);*/    
+}
+#fname, #lname, #email, #phone {
+    height: 25px;
+    width: 250px;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: var(--fw-m);
+}
+#question {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: var(--fw-m);
 }
 
 fieldset {

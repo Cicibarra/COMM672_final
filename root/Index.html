@@ -12,6 +12,21 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/test.css">
+      
+      <!-- jQuery----->
+      <script src="scripts/jquery.min.js"></script>
+
+      <script>
+        $(document).ready(function() {
+           $(".FAQ_list p").hide();
+            
+            $(".FAQ_list h3").click(function(){
+                $(".FAQ_list p").hide();
+                $(this).siblings().show();
+            });
+            
+        }); 
+      </script>
     </head>
 
   <body class="home_Body">
@@ -116,12 +131,25 @@
 
               <ul class="FAQ_list">
 
-                  <li><a class="FAQ_question" href="pages/teams_classes.html">What classes are offered?</a></li>
-                  <li><a class="FAQ_question" href="pages/register_prices.html">How do I register?</a></li>
-                  <li><a class="FAQ_question" href="pages/schedule.html">What is the schedule?</a></li>
-                  <li><a class="FAQ_question" href="pages/teams_classes.html">Are there any age restrictions?</a></li>
-                  <li><a class="FAQ_question" href="pages/register_prices.html">Can I try a class before signing up?</a></li>
-
+                  <li id="q1">
+                      <h3>What do my LJV registration fees cover?</h3>
+                      <p>Gym rentals, coaching fees, uniform, tournament entry fees, club insurance, administrative expenses, equipment, registrations. Depending on the level of team, amount of travel, or season of competition, certain teams may also receive additional uniform items and/or backpack, membership to SportsRecruits and/or Hudl, Recruiting Seminars, additional fitness workouts/practices, and/or participation medal/keepsake.</p>
+                  </li>
+                  
+                  <li id="q2">
+                      <h3>How can I register for the club?</h3>
+                      <p>You can register by filling out the registration form on our website or by visiting us during practice hours for a paper registration form.</p>
+                  </li>
+                  
+                  <li id="q3">
+                      <h3>Do I need prior volleyball experience to join?</h3>
+                      <p>No prior experience is necessary. We welcome beginners as well as experienced players.</p>
+                  </li>
+                  
+                  <li id="q4">
+                      <h3>What is the difference between a game, set and/or match?</h3>
+                      <p>Like in tennis, a volleyball match is made up of multiple sets.  A set is a single game within a match.  Younger ages and most club matches are best 2-out-of-3 sets.  Most varsity and college matches are best 3-out-of-5 sets.</p>
+                  </li>
               </ul>
 
               <h2>Still have questions?</h2>

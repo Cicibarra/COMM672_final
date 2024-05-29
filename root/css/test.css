@@ -331,6 +331,18 @@ nav ul a:hover {
     border-top: solid 1px var(--text-color);
     margin: 40px 50px;
 }
+
+.FAQ_list h3 {
+    font-size: calc(var(--fs-base)* 1.6);
+    text-align: left;  
+}
+.FAQ_list p {
+    text-align: justify; 
+}
+#q4 {
+    border-bottom: solid 1px var(--text-color);
+    margin-bottom: 70px;
+}
 .contact_btn {
 
     border: solid 1px var(--text-color);

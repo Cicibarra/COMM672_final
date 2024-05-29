@@ -323,7 +323,7 @@ nav ul a:hover {
     font-size: calc(var(--fs-base)* 1.4);
     margin: var(--spacer);
     text-align: center;
-    padding:  0 50px;
+    padding:  0 20px;
     font-weight: 400;
     
 }
@@ -338,7 +338,7 @@ nav ul a:hover {
     text-align: left;  
 }
 .FAQ_list p {
-    text-align: justify; 
+    text-align: left; 
 }
 #q4 {
     border-bottom: solid 1px var(--text-color);
@@ -522,12 +522,15 @@ footer {
     color: var(--text-color);
     font-weight: 400;
     text-align: center;
-    padding: .8em 0;
+    padding: .5em 0 1.8em;
     margin-top:0;
     border-top: solid 10px var(--accent-color);
-    margin
+   
 }
 
+footer p {
+    font-size: 15px;
+}
 .foot_ico a {
     color: var(--text-color);
     padding: calc(var(--spacer) / 2);

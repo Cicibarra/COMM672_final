@@ -316,7 +316,7 @@ nav ul a:hover {
     text-align: center;
     font-size: calc(var(--fs-base) * 3.5);
     padding: 20px;
-    margin-top: 60px;
+    margin-top: 90px;
 
 }
 
@@ -340,17 +340,30 @@ nav ul a:hover {
 .FAQ_sec li {
     border-top: solid 1px var(--text-color);
     margin: 40px 50px;
+    list-style-type: none;
 }
 
 .FAQ_list h3 {
     font-size: calc(var(--fs-base)* 1.6);
-    text-align: left;  
+    text-align: left; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.FAQ_list i {
+    margin-left: auto;
 }
 
 .FAQ_list p {
     text-align: left; 
+    
 }
-
+.chevron-down {
+    text-align: right;
+}
 #q4 {
     border-bottom: solid 1px var(--text-color);
     margin-bottom: 70px;
@@ -433,7 +446,7 @@ nav ul a:hover {
     display:flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacer));
+    gap: var(--spacer);
 }
 
 .newsletter {
@@ -603,12 +616,11 @@ footer p {
         grid-template-rows: 1fr 1fr;
         place-items: center;
         height: 100vh;
-        margin: 50px;
-        padding
-        
-         
+        margin: 50px;   
     }
-    .first2_art img{
+    
+    
+    .first2_art img {
         max-width: 100%;
         height: auto;
         align-self: center;
@@ -641,8 +653,24 @@ footer p {
         box-shadow:none;
     }
     
+    #grow_art {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+/*        gap: 20px;*/
+        margin: 50px;
+    }
     
+    .main_last {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
     
+    .mapWrapper {
+        margin-right: 30px;
+    }
+
 }
 
 
@@ -657,6 +685,9 @@ footer p {
         max-width: 1800px;
         margin: auto;
     }
+    
+    
+    
 }
 
 

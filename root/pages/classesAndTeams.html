@@ -3,6 +3,7 @@
     <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class and Teams</title>
      <link rel="stylesheet" href="../css/reset.css">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +11,10 @@
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="../css/test.css">
+     <link rel="stylesheet" href="../css/classes.css">
      
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
      <!-- jQuery Statement -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script>
           $(document).ready(function(){
               
@@ -20,20 +22,20 @@
               $(".girls_team .fall_season").hide();
               $(".girls_team .spring_season").hide();        
               $(".girlsTeamFall_img").click(function(){
-                  $(".girls_team .fall_season").fadeToggle(200); // fadeToggle = toggle with animation.
+                  $(".girls_team .fall_season").fadeToggle(300); // fadeToggle = toggle with animation.
               });
               $(".girlsTeamSpring_img").click(function(){
-                  $(".girls_team .spring_season").fadeToggle(200);
+                  $(".girls_team .spring_season").fadeToggle(300);
               });
               
               //show/hide contents in Boys Team
               $(".boys_team .fall_season").hide();
               $(".boys_team .tournaments").hide();        
               $(".boysTeamFall_img").click(function(){
-                  $(".boys_team .fall_season").fadeToggle(200); // fadeToggle = toggle with animation.
+                  $(".boys_team .fall_season").fadeToggle(300); // fadeToggle = toggle with animation.
               });
               $(".boysTeamTournaments_img").click(function(){
-                  $(".boys_team .tournaments").fadeToggle(200);
+                  $(".boys_team .tournaments").fadeToggle(300);
               });
               
           }); // end document ready
@@ -75,43 +77,53 @@
       
       <main>
         <section>
+              <img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">
               <article>
-                 <img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">
                  <h3>Discover</h3>
-                 <h1>Classes and Teams</h1>
+                 <h2>Classes and Teams</h2>
                  <p>Explore our wide range of classes and Teams for all skill levels and ages.</p>            
              </article>
         </section>
           
+        <!-- Girls Team -->
         <section class="girls_team">
              <img src="../images/girlsTeam_img.png" alt="Girls Team" class="girlsTeam_img">
-             <h1>Girls Team</h1>
+             <h2>Girls Team</h2>
              <p>We offer two INDOOR seasons for teams: Fall (short/mini-season) and Spring (longer typical club season):</p>
              
-             <img src="../images/girlsTeamFall_img.png" alt="Girls Team Fall" class="girlsTeamFall_img">
+             <!-- Girls Team fall season -->
+             <img src="../images/girlsTeamFall_img.png" alt="Girls Team Fall" class="girlsTeamFall_img imgBar">
              <article class="girls_team fall_season">
+                
+                 <!-- Girls Team fall season 5th-8th grade -->
                  <img src="../images/girlsYouth_img.png" alt="Girls Team Fall" class="girlsYouth_img">
-                 <p>FALL School teams (“mini-season”) for GIRLS in grades 5th-8th</p>
-                 <ul>
-                     <li>tryouts in late August</li>
-                     <li>compete in 2-3 local tournaments Sep-Oct</li>
-                     <li>compete against other middle school teams</li>
-                 </ul>
+                 <div>
+                    <h4>FALL School teams (“mini-season”) for GIRLS in grades 5th-8th</h4>
+                     <ul>
+                         <li>tryouts in late August</li>
+                         <li>compete in 2-3 local tournaments Sep-Oct</li>
+                         <li>compete against other middle school teams</li>
+                     </ul>
+                 </div>
              </article>
              
              <article class="girls_team fall_season">
+                 <!-- Girls Team fall season all ages -->
                  <img src="../images/girlsAllAges_img.png" alt="Girls Team Fall" class="girlsAllAges_img">
-                 <p>FALL Sunday Clinics for all ages/skill levels</p>
-                 <ul>
+                 <div>
+                    <h4>FALL Sunday Clinics for all ages/skill levels</h4>
+                    <ul>
                      <li>2 hours each Sunday (mid-August thru September) until club tryouts in early October</li>
                      <li>held at MBHS Gym, open to boys and girls, multiple courts and coaches</li>
-                 </ul>
-                 <p>Click on <a class="ext_links" href="#">FALL Mini-Season</a> for more details.</p>
+                    </ul>
+                    <p>Click on <a class="ext_links" href="#">FALL Mini-Season</a> for more details.</p>
+                 </div>
              </article>
              
-             <img src="../images/girlsTeamSpring_img.png" alt="Girls Team Spring" class="girlsTeamSpring_img">
+             <!-- Girls Team spring season -->
+             <img src="../images/girlsTeamSpring_img.png" alt="Girls Team Spring" class="girlsTeamSpring_img imgBar">
              <article class="girls_team spring_season">
-                 <p>SPRING Indoor Club Teams (PRIMARY club volleyball season) for all ages.</p>
+                 <h4>SPRING Indoor Club Teams (PRIMARY club volleyball season) for all ages.</h4>
                  <ul>
                      <li>15s-18s (9th-12th grade) have tryouts in late July, then take a club break to play on their respective high school teams (cannot play on club vb team during same time as HS team). Tournaments December through May/June.</li>
                      <li>10U-14U 94th-8th grade) have tryouts in early October, and start practices by early November (or sooner). Tournaments December-May/June.</li>
@@ -121,21 +133,25 @@
              </article>
           </section>
           
+        <!-- Boys Team -->
           <section class="boys_team">
              <img src="../images/boysTeam_img.png" alt="Boys Team" class="boysTeam_img">
-             <h1>Boyes Team</h1>
+             <h2>Boys Team</h2>
+             
+             <!-- Boys Team tryouts -->
              <article class="boys_team tryouts">
                  <p>TRYOUTS:  $30 tryouts fee and online registration required prior to participation.  Register for <a class="ext_links" href="#">Sunday Clinic</a> as your boys tryouts registration, please.</p>
-                 <p>If interested in LJV Boys team, please send an email to <a class="email" href="#">LJV/Bill</a></p>
+                 <p>If interested in LJV Boys team, please send an email to <a class="ext_links email" href="#">LJV/Bill</a></p>
                  <ul>
                      <li>Sunday Sept 8th 4:00-6:00pm at LJHS – all ages!</li>
                      <li>Sunday Sept 13th 4:00-6:00pm at LJHS – all ages!…  need more boys!</li>
                  </ul>
              </article>
                 
-             <img src="../images/boysTeamFall_img.png" alt="Boys Team Fall" class="boysTeamFall_img">
+             <!-- Boys Team fall season -->
+             <img src="../images/boysTeamFall_img.png" alt="Boys Team Fall" class="boysTeamFall_img imgBar">
              <article class="boys_team fall_season">
-                 <p>Fall Local Season:  approx. 5-6 practices/month, 5 local tournaments in Rancho Bernardo at Seaside VBC (SDVBC) Oct 6th – Dec 8th (dates listed below)</p>
+                 <h4>Fall Local Season:  approx. 5-6 practices/month, 5 local tournaments in Rancho Bernardo at Seaside VBC (SDVBC) Oct 6th – Dec 8th (dates listed below)</h4>
                  <a class="ext_links" href="#">https://www.sdvbc.org/seaside-locals</a>
                  
                  <p>Cost for Local Season:  $885 (plus $30 tryouts/clinic fee; required), season fees include uniforms, coaching, gym rental fees, tournament entries, equipment, insurance.  Payment plan option at time of registration.  Possibility of modifying team/season structure based on players ages/abilities. (cost is same as Fall 2018)</p>
@@ -153,9 +169,10 @@
                  </ul>
              </article>
              
-             <img src="../images/boysTeamTournaments_img.png" alt="Girls Team Tournaments" class="boysTeamTournaments_img">
+             <!-- Boys Team tournaments -->
+             <img src="../images/boysTeamTournaments_img.png" alt="Girls Team Tournaments" class="boysTeamTournaments_img imgBar">
              <article class="boys_team tournaments">
-                 <p>Local Tournaments for Fall 2019, 14U and younger (Locals):</p>
+                 <h4>Local Tournaments for Fall 2019, 14U and younger (Locals):</h4>
                  <ul>
                              <li>Sunday Oct 6  (PM wave 2:30-8pm)</li>
                              <li>Sunday Oct 13  (PM wave 2:30-8pm)</li>
@@ -163,7 +180,7 @@
                              <li>Saturday Nov 16  (PM wave 2:30-8pm)</li>
                              <li>Sunday Dec 8  (PM wave 2:30-8pm)</li>
                  </ul>
-                 <p>Boys LOCAL tournaments at <a class="ext_links" href="#">Seaside/San Diego Volleyball Club</a> in Rancho Bernardo</p>
+                 <h4>Boys LOCAL tournaments at <a class="ext_links" href="#">Seaside/San Diego Volleyball Club</a> in Rancho Bernardo</h4>
                  <a class="ext_links" href="#">Travel (SCVA) Tournaments for Fall 2019 (click for SCVA link)</a>
                  <ul>
                      <li>Boys 14U Travel/SCVA tournaments run Nov 17th through June</li>

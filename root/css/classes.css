@@ -1,0 +1,89 @@
+section h2 {
+    text-align: center;
+}
+
+p {
+/*    font-size: calc(var(--fs-base)*0.6);*/
+    max-width: 80%;
+    margin: auto;
+}
+
+
+article p {
+    max-width: 100%;
+}
+
+/*h2 {
+    font-size: calc(var(--fs-base)*1.5);
+}
+
+h3 {
+    font-size: calc(var(--fs-base)*0.8);
+}*/
+
+h4 {
+/*    font-size: calc(var(--fs-base)*0.6);*/
+    font-weight: var(--fw-m);
+}
+
+ul {
+/*    font-size: calc(var(--fs-base)*0.6);*/
+    list-style: disc;
+    text-align: justify;
+}
+
+a {
+/*    font-size: calc(var(--fs-base)*0.6);*/
+    font-weight: var(--fw-m);
+}
+
+@media screen and (min-width: 500px) {
+/*    p, ul, h4, a {
+        font-size: calc(var(--fs-base)*0.8);
+    }
+    h2 {
+        font-size: calc(var(--fs-base) * 2);
+    }
+    
+    h3 {
+        font-size: calc(var(--fs-base) * 1.2);
+    }*/
+    
+}
+
+
+@media screen and (min-width: 700px) {
+    p, ul, h4, a {
+        font-size: var(--fs-base);
+        max-width: 800px;
+    }
+    article {
+        max-width: 800px;
+    }
+    
+/*    h2 {
+        font-size: calc(var(--fs-base) * 2.6);
+    }
+    
+    h3 {
+        font-size: calc(var(--fs-base) * 1.5);
+    }*/
+    
+    /* bar image has max height */
+    .imgBar {
+        max-height: 100px;
+    }
+    
+    /* content style for Girls Fall Season */
+    .girls_team .fall_season {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .girls_team .fall_season img {
+        max-width: 40%;
+    }
+    .girlsAllAges_img {
+        order: 1;
+    }
+}

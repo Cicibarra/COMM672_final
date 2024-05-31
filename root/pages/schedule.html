@@ -3,20 +3,21 @@
      <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Schedule</title>
       <link rel="stylesheet" href="../css/reset.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../css/test.css">
+      <link rel="stylesheet" href="../css/classes.css">
     </head>
 
     <body class="home_Body">
       <header>
-          <section class="logo">
-              <img src="../images/La%20Jolla.png" alt="LJVC_logo">
-              <a href="../index.html"></a>
+        <section class="menuWrap">
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
               <input type="checkbox" id="checkbox">
               <nav>
                   <ul>
@@ -50,17 +51,21 @@
                 <h1>Explore Our Schedule</h1>
                 <p>Each individual LJV team also has their own calendar on the their team-specific page on this website.</p>
                 
-                <img src="https://placehold.co/150x50" alt="Girls Schedule" class="girlsSchedule_img">
-                <a class="girls_schedule" href="#">Schedule for girls team</a>
+                <figure>
+                    <img src="../images/girlsSchedule_img.png" alt="Girls Schedule" class="girlsSchedule_img">
+                    <a class="girls_schedule" href="#">Schedule for girls team</a>
+                </figure>
                 
-                <img src="https://placehold.co/150x50" alt="Boys Schedule" class="boysSchedule_img">
-                <a class="boys_schedule" href="#">Schedule for boys team</a>      
+                <figure>
+                    <img src="../images/boysSchedule_img.png" alt="Boys Schedule" class="boysSchedule_img">
+                    <a class="boys_schedule" href="#">Schedule for boys team</a>    
+                </figure>  
              </article>
              
              <article class="main schedule">
                 <h3>All LJV Events (Master Calendar):</h3>
                 <p>here will import a calender link</p>
-                <img src="https://placehold.co/450x350" alt="calender" class="calender_img">
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%23ffffff&showTitle=0&src=ZGVubnlnaG1lZGlhMjAxMUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="600" height="400" frameborder="0" scrolling="no"></iframe>
              </article>
          </section>
       </main>

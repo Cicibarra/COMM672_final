@@ -37,6 +37,11 @@ a {
     font-weight: var(--fw-m);
 }
 
+iframe {
+    width: 100%;
+}
+
+
 @media screen and (min-width: 500px) {
 /*    p, ul, h4, a {
         font-size: calc(var(--fs-base)*0.8);

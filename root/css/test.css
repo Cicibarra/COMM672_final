@@ -565,10 +565,6 @@ footer p {
 
 @media screen and (min-width: 980px) {
     
-    section.locations {
-        display: flex;
-        gap: calc(var(--spacer-dbl)*1.5);
-    }
 
     .menuIcon {
         display: none;

@@ -11,10 +11,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="../css/test2.css">
-<!--
-     <link rel="stylesheet" href="../css/classes.css">
--->
+     <link rel="stylesheet" href="../css/test.css">
      
      <!-- jQuery Statement -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -31,11 +28,32 @@
                   $(".girls_team .spring_season").fadeToggle(300);
               });
               
-              // changing image when hover on image bar
-              $('#my_image').on({
-                  'click': function(){
-                      $('#my_image').attr('src','second.jpg');
-                  }
+              // changing image when hover on Girls Fall Season
+              $(".girlsTeamFall_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamFall_img.png", "../images/girlsTeamFall_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamFall_hover_img.png", "../images/girlsTeamFall_img.png"));
+              });
+              
+              // changing image when hover on Girls Spring Season
+              $(".girlsTeamSpring_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamSpring_img.png", "../images/girlsTeamSpring_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamSpring_hover_img.png", "../images/girlsTeamSpring_img.png"));
+              });
+              
+              // changing image when hover on Boys Fall Season
+              $(".boysTeamFall_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamFall_img.png", "../images/boysTeamFall_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamFall_hover_img.png", "../images/boysTeamFall_img.png"));
+              });
+              
+              // changing image when hover on Boys Tournaments
+              $(".boysTeamTournaments_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamTournaments_img.png", "../images/boysTeamTournaments_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamTournaments_hover_img.png", "../images/boysTeamTournaments_img.png"));
               });
               
               //show/hide contents in Boys Team
@@ -85,7 +103,7 @@
           </section>
       </header>
       
-      <main>
+      <main class="classAndTeams">
         <section>
               <img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">
               <article>

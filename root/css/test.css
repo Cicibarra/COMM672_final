@@ -561,31 +561,31 @@ footer p {
 }
 
 /*--------------------Hong's CSS---------------*/
-section h2 {
+
+.classAndTeams h2 {
     text-align: center;
 }
 
-p {
+.classAndTeams p {
     max-width: 80%;
     margin: auto;
 }
 
 
-article p {
+.classAndTeams article p {
     max-width: 100%;
 }
 
-
-ul {
+.classAndTeams ul {
     list-style: disc;
     text-align: justify;
 }
 
-a {
+.classAndTeams a {
     font-weight: var(--fw-m);
 }
 
-iframe {
+.classAndTeams iframe {
     width: 100%;
 }
 
@@ -593,7 +593,6 @@ iframe {
 .girlsTeamFall_img, .girlsTeamSpring_img, .boysTeamFall_img, .boysTeamTournaments_img {
     cursor: pointer;
 }
-
 
 /*-------------------------------------------End Hong's CSS---------------*/
 
@@ -1055,22 +1054,24 @@ iframe {
    /*------------End Cindy's Media Query-----*/
     
    /*----------------Hong's Media query------------------------*/ 
-    p, ul, a {
-        font-size: calc(var(--fs-base)*1.5);
-        max-width: 900px;
+
+    .classAndTeams p, .classAndTeams ul, .classAndTeams a {
+            font-size: calc(var(--fs-base)*1.5);
+            max-width: 900px;
     }
-    article {
+    
+    .classAndTeams article {
         max-width: 900px;
     }
     
-    .imgBar {
+    .classAndTeams .imgBar {
         max-height: 100px;
     }
     
-    /* content style for Girls Fall Season */
+    /* content style for Girls Fall Season*/ 
     .girls_team .fall_season {
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
         align-items: center;
     }
     .girls_team .fall_season img {
@@ -1079,7 +1080,6 @@ iframe {
     .girlsAllAges_img {
         order: 1;
     }
-
 
 }
 

@@ -576,10 +576,6 @@ article p {
 }
 
 
-h4 {
-    font-weight: var(--fw-m);
-}
-
 ul {
     list-style: disc;
     text-align: justify;
@@ -598,33 +594,6 @@ iframe {
     cursor: pointer;
 }
 
-
-@media screen and (min-width: 1000px) {
-    p, ul, h4, a {
-        font-size: calc(var(--fs-base)*1.5);
-        max-width: 1000px;
-    }
-    article {
-        max-width: 1000px;
-    }
-    
-    .imgBar {
-        max-height: 100px;
-    }
-    
-    /* content style for Girls Fall Season */
-    .girls_team .fall_season {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-    }
-    .girls_team .fall_season img {
-        max-width: 40%;
-    }
-    .girlsAllAges_img {
-        order: 1;
-    }
-}
 
 /*-------------------------------------------End Hong's CSS---------------*/
 
@@ -734,8 +703,36 @@ iframe {
     .mapWrapper {
         margin-right: 30px;
     }
+    
+   /*----------------Hong's Media query------------------------*/ 
+    p, ul, a {
+        font-size: calc(var(--fs-base)*1.5);
+        max-width: 900px;
+    }
+    article {
+        max-width: 900px;
+    }
+    
+    .imgBar {
+        max-height: 100px;
+    }
+    
+    /* content style for Girls Fall Season */
+    .girls_team .fall_season {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .girls_team .fall_season img {
+        max-width: 40%;
+    }
+    .girlsAllAges_img {
+        order: 1;
+    }
+
 
 }
+
 
 
 @media screen and (min-width: 1360px) {

@@ -248,6 +248,11 @@ nav ul a:hover {
     margin: 50px;
 }
 
+#blue2 {
+    border: solid 1px var(--accent-color);
+    padding: 20px;
+    margin: 50px;
+}
 .blue_Aside h1 {
     color: var(--neutral-lt-color);
     font-size: calc(var(--fs-base)* 2.5);
@@ -430,7 +435,7 @@ nav ul a:hover {
 
 .last_art h1 {
     text-shadow: var(--shadow);
-    font-size: 3.2;
+    font-size: 3.2em;
 }
 .Grow_img {
     margin-bottom: 60px;
@@ -840,6 +845,10 @@ footer p {
 
 /*--------yellow border aside------*/
 #blue h2{
+    text-shadow: var(--shadow);
+}
+
+#blue2 h2{
     text-shadow: var(--shadow);
 }
 

@@ -181,7 +181,7 @@ img {
 }
 
 .grid-text {
-    width: 150px
+    width: 150px;
     font-size: .8em;
 }
 
@@ -257,7 +257,6 @@ img {
 
 .Learn_btn {
     background-color: var(--neutral-lt-color);
-    padding: 
 }
 
 /*--------menu-----------*/

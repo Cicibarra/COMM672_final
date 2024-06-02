@@ -632,6 +632,11 @@ footer p {
     cursor: pointer;
 }
 
+/* spacing at the bottom */
+.boys_team, .girls_team {
+    margin-bottom: var(--spacer);
+}
+
 /*-------------------------------------------End Hong's CSS---------------*/
 
 /*---------------------------Ceren's CSS--------------------------*/

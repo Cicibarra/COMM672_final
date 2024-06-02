@@ -10,10 +10,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="../css/test2.css">
-<!--
-     <link rel="stylesheet" href="../css/classes.css">
--->
+     <link rel="stylesheet" href="../css/test.css">
      
      <!-- jQuery Statement -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -30,11 +27,32 @@
                   $(".girls_team .spring_season").fadeToggle(300);
               });
               
-              // changing image when hover on image bar
-              $('#my_image').on({
-                  'click': function(){
-                      $('#my_image').attr('src','second.jpg');
-                  }
+              // changing image when hover on Girls Fall Season
+              $(".girlsTeamFall_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamFall_img.png", "../images/girlsTeamFall_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamFall_hover_img.png", "../images/girlsTeamFall_img.png"));
+              });
+              
+              // changing image when hover on Girls Spring Season
+              $(".girlsTeamSpring_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamSpring_img.png", "../images/girlsTeamSpring_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/girlsTeamSpring_hover_img.png", "../images/girlsTeamSpring_img.png"));
+              });
+              
+              // changing image when hover on Boys Fall Season
+              $(".boysTeamFall_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamFall_img.png", "../images/boysTeamFall_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamFall_hover_img.png", "../images/boysTeamFall_img.png"));
+              });
+              
+              // changing image when hover on Boys Tournaments
+              $(".boysTeamTournaments_img").mouseover(function (e) {    
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamTournaments_img.png", "../images/boysTeamTournaments_hover_img.png"));
+              }).mouseout(function (e) {
+                  $(this).attr("src", $(this).attr("src").replace("../images/boysTeamTournaments_hover_img.png", "../images/boysTeamTournaments_img.png"));
               });
               
               //show/hide contents in Boys Team
@@ -62,7 +80,7 @@
                   <ul>
                       <li><a href="about.html">About</a></li>
                       <li><a href="locations.html">Location</a></li>
-                      <li><a href="classesAndTeams.html">Classes & Teams</a></li>
+                      <li><a href="ClassesAndTeams.html">Classes & Teams</a></li>
                       <li><a href="schedule.html">Schedule</a></li>
                       <li><a href="register_prices.html">Payment & Pricing</a></li>
                       <li><a href="FAQ.html">FAQ</a></li>
@@ -84,7 +102,7 @@
           </section>
       </header>
       
-      <main>
+      <main class="classAndTeams">
         <section>
               <img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">
               <article>
@@ -169,12 +187,10 @@
                  
                  <p>Travel Team: We will form a travel team for HS-age players, to compete in 16U division</p>
                  
+                 <h3>Practices:</h3>
                  <ul>
-                         Practices:
-                         <ul>
-                             <li>Sundays at La Jolla High School (LJHS) gym 4:00-6:00pm</li>
-                             <li>Wednesdays or Thursdays at The Salvation Army (TSA) gym  7:00-9:00pm (check LJV calendar)</li>
-                         </ul>
+                        <li>Sundays at La Jolla High School (LJHS) gym 4:00-6:00pm</li>
+                        <li>Wednesdays or Thursdays at The Salvation Army (TSA) gym  7:00-9:00pm (check LJV calendar)</li>
                  </ul>
              </article>
              

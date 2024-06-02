@@ -503,12 +503,45 @@ nav ul a:hover {
     width: 100%;
     height: 100%;
 }
-/*-------Chris' form--------*/
+/*-------Chris' form and location page--------*/
 
-span {
-    font-size: calc(var(--spacer)*1.2);
+.pink_girls {
+        margin-top: 20px;
+    }
+#contact_us h1, .locations h1 {
+    text-align: center;
+    font-size: calc(var(--fs-base) * 3.5);
+    padding: 20px;
+/*    margin-top: 0px;*/
+    text-shadow: var(--shadow);
+
+}
+#contact_us h2, .locations h2 {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+#contact_us p, .locations p {
+    font-family: var(--primary-font);
+    font-size: calc(var(--fs-base)* 1.4);
+    margin: var(--spacer);
+/*    text-align: center;*/
+    padding:  0 20px;
+    font-weight: 400;
+    
+}
+
+.club_contact span {
+font-size: calc(var(--spacer)*1.2);
 font-weight: var(--fw-b);
 }
+/*
+#contact_us, #club_director, #club_address {
+        background-color: #f4f4f4;
+    }
+*/
 .contact_form {
     padding: var(--spacer);
 }
@@ -1024,14 +1057,54 @@ footer p {
         margin: 50px;
     }
     
-    .main_last {
+    .main_last, .club_contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-    }
-    
+    }    
+/*
     .mapWrapper {
         margin-right: 30px;
+    }
+*/
+    .mapWrapper {   
+        margin: calc(var(--spacer)*3);}
+
+    
+/*----------- Chris' Media queries--------------*/
+/*----------------------------------------------*/
+
+    .contact_form {
+        max-width: 80%;
+        margin: auto;
+    }
+    .club_contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: #f4f4f4;
+    }  
+    #contact_img {
+    align-items: center;   
+    max-width: 75%;    
+    }
+    #club_director, #club_address {
+        background-color: #f4f4f4;
+    }
+    .our_locations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: solid 1px var(--primary-color);
+        margin-top: 10px;
+    }
+    .locations_last-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }    
+    
+    .tsa {
+        border: solid 1px var(--primary-color);
     }
     
     /*-------Cindy's Media query---*/

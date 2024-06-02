@@ -802,8 +802,6 @@ footer p {
     text-align: center;
     background-color: #f4f4f4;
     border-bottom: solid 1px var(--accent-color);
-
-
 }
 
 .price_hero h1 {
@@ -932,10 +930,10 @@ footer p {
 }
 
 .aid_Aside_pR {
+    top: 50%;
+    left: 50%
     width: 80%;
     text-align: center;
-
-
 }
 
 .aid_Aside_pR p {

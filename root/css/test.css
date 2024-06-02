@@ -527,7 +527,7 @@ nav ul a:hover {
     font-family: var(--primary-font);
     font-size: calc(var(--fs-base)* 1.4);
     margin: var(--spacer);
-/*    text-align: center;*/
+    text-align: center;
     padding:  0 20px;
     font-weight: 400;
     
@@ -552,7 +552,7 @@ font-weight: var(--fw-b);
 
 #contact_info {
     display: grid;
-    grid-auto-rows: column;
+/*    grid-auto-rows: column;*/
     /*    padding: var(--spacer);*/    
 }
 #fname, #lname, #email, #phone {
@@ -648,7 +648,7 @@ footer p {
 .grid-box {
     color: black;
     padding: 10px;
-    box-shadow: grey;
+    box-shadow: var(--shadow);
     text-align: left;
     width: 200px;
     height: 12000px;

@@ -806,6 +806,8 @@ footer p {
 
 /*------------------------End Ceren's Code--------------------------*/
 
+
+
 /*------------------------Cindy's CSS----------------------------*/
 
 /*_____________prices & Resgistration CSS_____________*/
@@ -1010,16 +1012,13 @@ footer p {
     margin: auto;
 }
 
-.FAQ_list li {
+.FAQ_list_page li {
     border: solid 1px var(--text-color);
     margin: 20px;
     padding-bottom: 30px;
 }
 
-/*-------------------------End Cindy's Code-------------------------------*/
-
-
-
+/*-----------------------End Cindy's Code--------------------------*/
 
 
 

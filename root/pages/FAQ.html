@@ -15,34 +15,43 @@
     <link rel="stylesheet" href="../css/test.css">
 </head>
 
-<body class="home_Body">
+<body>
 
     <header>
-        <section>
-            <img src="../images/LaJolla_Logo_cropped.png" class="logo" alt="LJVC logo">
-            <a href="Index.html"></a>
-            <input type="checkbox" id="checkbox">
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/locations.html">Location</a></li>
-                    <li><a href="../pages/teams_classes.html">Teams & Classes</a></li>
-                    <li><a href="../pages/schedule.html">Schedule</a></li>
-                    <li><a href="../pages/register_prices.html">Payment & Pricing</a></li>
-                    <li><a href="../pages/FAQ.html">FAQ</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <label for="checkbox">
-                <i class="fa-solid fa-bars menuIcon" aria-hidden="true"></i>
-                <i class="fa-solid fa-xmark menuIconClose" aria-hidden="true"></i>
-            </label>
-        </section>
-        <section class="btns">
-            <a class="In_btn" href="pages/about.html">Learn More</a>
-            <a class="Up_btn" href="pages/sign_up_form.html">Sign Up</a>
-        </section>
-    </header>
+
+        <section class="menuWrap">
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+              <input type="checkbox" id="checkbox">
+              <nav>
+                  <ul class="outer">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="locations.html">Locations</a></li>
+                      <li><a href="ClassesAndTeams.html">Classes & Teams</a></li>
+                      <li><a href="schedule.html">Schedule</a></li>
+                      <li><a href="register_prices.html">Register & Pricing</a>
+                      <ul class="fly_out">
+                          <li><a href ="sign_up_form.html">Registration</a></li>
+                          <li><a href ="payment_form.html"> Payments</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="FAQ.html">FAQ</a></li>
+                      <li><a href="pages/contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+              <label for="checkbox">
+                  <i class="fa-solid fa-bars menuIcon"></i>
+                  <i class="fa-solid fa-xmark menuIconClose"></i>
+              </label>
+          </section>
+          <section class="btns">
+              <a class="In_btn" href="pages/about.html">
+                  Learn More
+              </a>
+              <a class="Up_btn" href="pages/sign_up_form.html">
+                  Sign Up
+              </a>
+          </section>
+      </header>
 
     <main>
 
@@ -53,7 +62,7 @@
         </section>
 
         <section class="faq">
-            <ul class="FAQ_list">
+            <ul class="FAQ_list_page">
 
                 <li class="faq-item">
                     <h3>Do I need prior volleyball experience to join?</h3>
@@ -139,14 +148,19 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+     <footer class="foot_sec">
+        <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+
         <section class="foot_ico">
-            <a class="f_ico" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="t_ico" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="ig_ico" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="li_ico" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="f_ico" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i></a>
+            <a class="t_ico" href="https://x.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+            <a class="ig_ico" href="https://www.instagram.com/">
+                <i class="fab fa-instagram" target="_blank"></i></a>
+            <a class="li_ico" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </section>
+
     </footer>
 </body>
 

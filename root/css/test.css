@@ -769,8 +769,7 @@ footer p {
     border-top: solid 2px var(--neutral-lt-color);
     padding: calc(var(--spacer)* 2);
     margin: auto;
-}
-
+}   
 .meet-our-team {
     background-color: #ffffff;
     border: 2px solid #ffffff;

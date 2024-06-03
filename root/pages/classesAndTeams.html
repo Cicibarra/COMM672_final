@@ -77,12 +77,17 @@
             <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
               <input type="checkbox" id="checkbox">
               <nav>
-                  <ul>
+                  <ul class="outer">
                       <li><a href="about.html">About</a></li>
-                      <li><a href="locations.html">Location</a></li>
+                      <li><a href="locations.html">Locations</a></li>
                       <li><a href="ClassesAndTeams.html">Classes & Teams</a></li>
                       <li><a href="schedule.html">Schedule</a></li>
-                      <li><a href="register_prices.html">Payment & Pricing</a></li>
+                      <li><a href="register_prices.html">Register & Pricing</a>
+                      <ul class="fly_out">
+                          <li><a href ="sign_up_form.html">Registration</a></li>
+                          <li><a href ="payment_form.html"> Payments</a></li>
+                      </ul>
+                      </li>
                       <li><a href="FAQ.html">FAQ</a></li>
                       <li><a href="contact.html">Contact</a></li>
                   </ul>
@@ -104,19 +109,23 @@
       
       <main class="classAndTeams">
         <section>
-              <img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">
-              <article>
-                 <h3>Discover</h3>
-                 <h2>Classes and Teams</h2>
+              <!--<img src="../images/ourTeam_img.png" alt="Our Team" class="ourTeam_img">-->
+              <article class="classAndTeams_title">
+                 <h1 class="hero_h1">Classes and Teams</h1>
                  <p>Explore our wide range of classes and Teams for all skill levels and ages.</p>            
              </article>
         </section>
           
         <!-- Girls Team -->
         <section class="girls_team">
-             <img src="../images/girlsTeam_img.png" alt="Girls Team" class="girlsTeam_img">
-             <h2>Girls Team</h2>
-             <p>We offer two INDOOR seasons for teams: Fall (short/mini-season) and Spring (longer typical club season):</p>
+            
+             <article class="girls_team_title">
+                <img src="../images/girlsTeam_img.png" alt="Girls Team" class="girlsTeam_img">
+                <div>
+                   <h2>Girls Team</h2>
+                   <p>We offer two INDOOR seasons for teams: Fall (short/mini-season) and Spring (longer typical club season):</p>
+                </div>
+             </article>
              
              <!-- Girls Team fall season -->
              <img src="../images/girlsTeamFall_img.png" alt="Girls Team Fall" class="girlsTeamFall_img imgBar">
@@ -162,8 +171,10 @@
           
         <!-- Boys Team -->
           <section class="boys_team">
-             <img src="../images/boysTeam_img.png" alt="Boys Team" class="boysTeam_img">
+             <article>
+                 <img src="../images/boysTeam_img.jpg" alt="Boys Team" class="boysTeam_img">
              <h2>Boys Team</h2>
+             </article>
              
              <!-- Boys Team tryouts -->
              <article class="boys_team tryouts">
@@ -217,26 +228,20 @@
         </main>
          
          
-          <footer class="foot_sec">
-              <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+        <footer class="foot_sec">
+            <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
 
-              <section class="foot_ico">
-                  <a class="f_ico" href="#">
-                      <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a class="t_ico" href="#">
-                      <i class="fab fa-twitter"></i>
-                  </a>
-                  <a class="ig_ico" href="#">
-                      <i class="fab fa-instagram">
-                      </i>
-                  </a>
-                  <a class="li_ico" href="#">
-                      <i class="fab fa-linkedin-in">
-                      </i>
-                  </a>
-              </section>
-          </footer>
+            <section class="foot_ico">
+                <a class="f_ico" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i></a>
+                <a class="t_ico" href="https://x.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+                <a class="ig_ico" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i></a>
+                <a class="li_ico" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </section>
+
+        </footer>
     </body>  
 </html>  
          

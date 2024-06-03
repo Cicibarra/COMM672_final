@@ -340,16 +340,16 @@ nav ul a:hover {
 .FAQ_sec h1 {
     text-align: center;
     font-size: calc(var(--fs-base) * 3.5);
-    padding: 20px;
-    margin-top: 90px;
-
+    padding: 60px;
+    margin-top: 40px;
+    text-shadow: none;
+    font-weight: 600;
 }
 
 .FAQ_sec h2 {
     text-align: center;
-    font-size: 2.3em;
-    font-weight: 500;
-
+    font-size: 3em;
+    font-weight: var(--fw-b);
 }
 
 .FAQ_sec p {
@@ -364,12 +364,14 @@ nav ul a:hover {
 
 .FAQ_sec li {
     border-top: solid 1px var(--text-color);
-    margin: 40px 50px;
+    margin: 40px 40px;
     list-style-type: none;
+    max-width: 80%;
+    text-align: center;
 }
 
 .FAQ_list h3 {
-    font-size: calc(var(--fs-base)* 1.6);
+    font-size: calc(var(--fs-base)* 1.2);
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -385,6 +387,7 @@ nav ul a:hover {
 
 .FAQ_list p {
     text-align: left;
+    font-size: calc(var(--fs-base)* 1.2);
 
 }
 
@@ -412,7 +415,7 @@ nav ul a:hover {
     color: var(--primary-color);
 }
 
-/*----buttons------*/
+/*---- General buttons------*/
 
 .btns {
     display: flex;
@@ -931,11 +934,13 @@ footer p {
     border-top: solid 10px var(--accent-color);
     padding: 60px;
     margin-top: 60px;
+    text-align: center;
 
 }
 
 .blue_Aside_pR h1 {
     color: var(--neutral-lt-color);
+
 }
 
 /*--------yellow border aside------*/
@@ -962,7 +967,7 @@ footer p {
 /*---------Notes Price & resgistration--------*/
 .note_PR {
     padding-top: 90px;
-    max-width: 1100px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -975,12 +980,12 @@ footer p {
 }
 
 /*----------------FAQ------------*/
-.FAQ_sec h1 {
+#faq_id h1 {
     margin-top: 20px;
     text-shadow: var(--shadow);
 }
 
-.FAQ_sec h3 {
+#faq_id h3 {
     padding-top: 60px;
     width: 80%;
     margin: auto;
@@ -988,7 +993,7 @@ footer p {
     text-align: center;
 }
 
-.FAQ_sec p {
+#faq_id p {
     font-size: calc(var(--fs-base) * 1.1);
     font-weight: var(--fw-l);
     width: 80%;
@@ -998,6 +1003,10 @@ footer p {
 .faq {
     padding-top: 10px;
 
+}
+
+.faq li{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq h3 {
@@ -1012,10 +1021,12 @@ footer p {
     margin: auto;
 }
 
+
 .FAQ_list_page li {
     border: solid 1px var(--text-color);
     margin: 20px;
     padding-bottom: 30px;
+    
 }
 
 /*-----------------------End Cindy's Code--------------------------*/

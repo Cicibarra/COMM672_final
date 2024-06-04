@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Final Project</title>
+    <title>Sign Up Form Page</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,20 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/test.css">
     
-    <!-- jQuery----->
-    <script src="scripts/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-         $(".FAQ_list p").hide();
-          
-          $(".FAQ_list h3").click(function(){
-              $(".FAQ_list p").hide();
-              $(this).siblings().show();
-          });
-          
-      }); 
-    </script>
   </head>
 
   <body class="home_Body">
@@ -37,6 +23,7 @@
             <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
             <input type="checkbox" id="checkbox">
             <nav>
+
                   <ul class="outer">
                       <li><a href="about.html">About</a></li>
                       <li><a href="locations.html">Locations</a></li>
@@ -135,13 +122,13 @@
             <fieldset id="boys_girls">
                 <legend>Select boys, girls or both</legend>
                 <input type="radio" id="boys" name="boys_girls" value="boys">
-                  <label for="boys">Boys</label>
-                 
-                  <input type="radio" id="girls" name="boys_girls" value="girls">
-                  <label for="girls">Girls</label>
-                 
-                  <input type="radio" id="both" name="boys_girls" value="both">
-                  <label for="both">Both</label>
+                  <label for="boys">Boys</label>
+                 
+                  <input type="radio" id="girls" name="boys_girls" value="girls">
+                  <label for="girls">Girls</label>
+                 
+                  <input type="radio" id="both" name="boys_girls" value="both">
+                  <label for="both">Both</label>
             </fieldset>
 
         

@@ -109,7 +109,7 @@ img {
 .logo {
     width: 180px;
     box-shadow: none;
-
+    margin-bottom: 0;
 }
 
 /*--------menu-----------*/
@@ -153,7 +153,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    background-color: var(--primary-color);
+/*    background-color: var(--primary-color);*/
     color: var(--accent-color);
 }
 
@@ -200,27 +200,7 @@ nav ul a:hover {
     display: block;
 }
 
-/*
------------fly-out-----------
 
-.fly_out {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    font-size: 1.6em;
-    font-size: calc(var(--fs-base)*1.1);
-    z-index: 1;
-    background-color: var(--primary-color);
-}
-
-.fly_out li {
-    color: var(--text-color);
-    padding: .2em 1.4em;
-    border-bottom: solid 1px var(--accent-color);
-    text-align: left;
-    cursor: pointer;
-}
-*/
 
 /*-------- hero cta-------*/
 .hero_cta {
@@ -234,7 +214,7 @@ nav ul a:hover {
 
 .hero_h1 {
     line-height: calc(var(--line-h)* .8);
-/*    margin: calc(var(--spacer)*2);*/
+    margin: calc(var(--spacer)*2);
     text-align: center;
     text-shadow: var(--shadow);
     margin-bottom: 10px
@@ -568,6 +548,7 @@ nav ul a:hover {
 
 #contact_us h2,
 .locations h2 {
+    text-align: center;
     font-weight: var(--fw-m);
     margin-top: 20px;
 }
@@ -575,12 +556,25 @@ nav ul a:hover {
 #contact_us p,
 .locations p {
     font-family: var(--primary-font);
-    font-size: calc(var(--fs-base)* 1.4);
+/*    font-size: calc(var(--fs-base)* 1.4);*/
     margin: var(--spacer);
     text-align: left;
     padding: 0 20px;
     font-weight: var(--fw-l);
 
+}
+.our_locations {
+    border: solid 1px var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+#boysteamblue {
+    margin-top: calc(var(--spacer)*1.5);
+}
+
+.header_border {
+    border: solid 1px var(--accent-color);
+    border-radius: var(--border-radius);
 }
 
 .club_contact span {
@@ -588,11 +582,6 @@ nav ul a:hover {
     font-weight: var(--fw-b);
 }
 
-/*
-#contact_us, #club_director, #club_address {
-        background-color: #f4f4f4;
-    }
-*/
 .contact_form {
     padding: var(--spacer);
 }
@@ -610,7 +599,7 @@ nav ul a:hover {
 
 #fname,
 #lname,
-#email,
+#email2,
 #phone {
     height: 25px;
     width: 250px;
@@ -625,14 +614,26 @@ nav ul a:hover {
     font-weight: var(--fw-m);
 }
 
-fieldset {
+.contact_form fieldset {
     border: 2px solid var(--primary-color);
     margin: var(--spacer);
     border-radius: var(--border-radius);
     font-weight: var(--fw-b);
     padding: var(--spacer);
 }
+.contact_form fieldset legend {
+    text-transform: uppercase;
+}
 
+#contact_us p {
+    text-align: center;
+}
+
+.club_contact {
+    border: solid 1px var(--accent-color);
+    border-radius: var(--border-radius);
+    margin: calc(var(--spacer)*2);
+}
 
 /*----------footer-----------*/
 footer {
@@ -861,7 +862,7 @@ position: relative;
 
 /*------------------------Cindy's CSS----------------------------*/
 
-/*_____________prices & Resgistration CSS_____________*/
+/*_____________prices & Registration CSS_____________*/
 
 
 
@@ -1201,6 +1202,7 @@ position: relative;
 
     .benef {
         order: 4;
+        margin-bottom: calc(var(--spacer)*2);
     }
 
     .blue_Aside {
@@ -1269,7 +1271,6 @@ position: relative;
     .our_locations {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border: solid 1px var(--primary-color);
         margin-top: 10px;
     }
 

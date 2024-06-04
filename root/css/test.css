@@ -127,14 +127,13 @@ img {
 /*-----Nav-------*/
 nav {
     position: absolute;
-    top: 155px;
-    /*    left: 0;*/
+    top: 153px;
     right: 0;
     width: 200px;
     background-color: var(--primary-color);
 }
 
-nav ul {
+nav ul.outer {
     max-height: 0;
     overflow: hidden;
     transition: all .5s;
@@ -158,6 +157,19 @@ nav ul a:hover {
     color: var(--accent-color);
 }
 
+
+.fly_out li {
+/*    text-align:right;*/
+    border-bottom: none;
+}
+
+.fly_out li a::before {
+    content: "> ";
+    margin-left: 10px;
+}
+
+
+
 /*-----hamburger and close X ---------*/
 .menuIcon,
 .menuIconClose {
@@ -176,7 +188,7 @@ nav ul a:hover {
 
 #checkbox:checked ~ nav ul.outer {
     display: block;
-    max-height: 440px;
+    max-height: 640px;
     transition: all .5s;
 }
 
@@ -188,7 +200,8 @@ nav ul a:hover {
     display: block;
 }
 
-/*-----------fly-out-----------*/
+/*
+-----------fly-out-----------
 
 .fly_out {
     display: none;
@@ -207,6 +220,7 @@ nav ul a:hover {
     text-align: left;
     cursor: pointer;
 }
+*/
 
 /*-------- hero cta-------*/
 .hero_cta {
@@ -1073,10 +1087,16 @@ position: relative;
 
 @media screen and (min-width: 980px) {
 
-    /*fly out menu */
-    nav ul li:hover .fly_out,
-    .fly_out:hover {
-        display: block;
+    /*---------fly out menu -------------*/
+    /* never show hamburger close box in wide screen */
+    #checkbox:checked ~ label .menuIconClose {
+        display: none;
+    }
+    
+    /* force menu to flex in widescreen, 
+    regardless of checkbox state*/
+    #checkbox:checked ~ nav ul.outer {
+        display: flex;
     }
 
     .menuIcon {
@@ -1095,7 +1115,7 @@ position: relative;
         height: auto;
     }
 
-    nav ul {
+    nav ul.outer {
         max-height: 100px;
         text-align: right;
         display: flex;
@@ -1114,10 +1134,40 @@ position: relative;
         border-bottom: none;
     }
 
-    nav ul a:hover {
+    nav ul.outer > a:hover {
         background-color: var(--neutral-lt-color);
         color: var(--accent-color);
     }
+    
+    /*-----------fly-out menu, only shown in wide screen-----------*/
+
+    .fly_out {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        font-size: 1.6em;
+        font-size: calc(var(--fs-base)*1.1);
+        z-index: 1;
+        background-color: var(--primary-color);
+    }
+
+    .fly_out li {
+        color: var(--text-color);
+        background-color: var(--primary-color);
+        padding: .2em 1.4em;
+        border-bottom: solid 1px var(--accent-color);
+        text-align: left;
+        cursor: pointer;
+    }    
+    nav ul li:hover .fly_out,
+    .fly_out:hover {
+        display: block;
+    }
+
+    /*    end fly-out  */
+    
+    
+    
 
     .first2_art {
         display: grid;

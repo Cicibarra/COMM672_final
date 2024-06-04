@@ -48,7 +48,6 @@ header {
 
 main {
     margin: auto;
-    /*    max-width: 80%;*/
 }
 
 article {
@@ -107,7 +106,6 @@ img {
     margin-bottom: var(--spacer);
 }
 
-.benef img {}
 
 .logo {
     width: 180px;

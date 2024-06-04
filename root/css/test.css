@@ -104,15 +104,11 @@ img {
     width: 100%;
     height: auto;
     box-shadow: var(--shadow);
-    margin-bottom: var(--spacer);
 }
-
-.benef img {}
 
 .logo {
     width: 180px;
     box-shadow: none;
-    margin-bottom: 0;
 
 }
 
@@ -131,13 +127,14 @@ img {
 /*-----Nav-------*/
 nav {
     position: absolute;
-    top: 153px;
+    top: 155px;
+    /*    left: 0;*/
     right: 0;
     width: 200px;
     background-color: var(--primary-color);
 }
 
-nav ul.outer {
+nav ul {
     max-height: 0;
     overflow: hidden;
     transition: all .5s;
@@ -157,21 +154,9 @@ nav ul a {
 }
 
 nav ul a:hover {
-/*    background-color: var(--primary-color);*/
+    background-color: var(--primary-color);
     color: var(--accent-color);
 }
-
-.fly_out li {
-/*    text-align:right;*/
-    border-bottom: none;
-}
-
-.fly_out li a::before {
-    content: "> ";
-    margin-left: 10px;
-}
-
-
 
 /*-----hamburger and close X ---------*/
 .menuIcon,
@@ -191,7 +176,7 @@ nav ul a:hover {
 
 #checkbox:checked ~ nav ul.outer {
     display: block;
-    max-height: 640px;
+    max-height: 440px;
     transition: all .5s;
 }
 
@@ -203,7 +188,25 @@ nav ul a:hover {
     display: block;
 }
 
+/*-----------fly-out-----------*/
 
+.fly_out {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    font-size: 1.6em;
+    font-size: calc(var(--fs-base)*1.1);
+    z-index: 1;
+    background-color: var(--primary-color);
+}
+
+.fly_out li {
+    color: var(--text-color);
+    padding: .2em 1.4em;
+    border-bottom: solid 1px var(--accent-color);
+    text-align: left;
+    cursor: pointer;
+}
 
 /*-------- hero cta-------*/
 .hero_cta {
@@ -217,21 +220,22 @@ nav ul a:hover {
 
 .hero_h1 {
     line-height: calc(var(--line-h)* .8);
-    /*    margin: calc(var(--spacer)*2);*/
+/*    margin: calc(var(--spacer)*2);*/
     text-align: center;
     text-shadow: var(--shadow);
     margin-bottom: 10px
+
 }
 
 .hero_img {
-    max-width: 100%;
+     max-width: 100%;
 }
 
 .hero_cta p {
     text-align: center;
     margin: 5px calc(var(--spacer)*6);
-    font-weight: 400;
-
+    font-weight: 400;  
+    
 }
 
 
@@ -417,7 +421,7 @@ nav ul a:hover {
     justify-content: center;
     gap: 3px;
     font-size: calc(var(--fs-base) * .8);
-    /*    margin-top: 10px;*/
+    margin-top: 10px;
 
 }
 
@@ -532,7 +536,7 @@ nav ul a:hover {
     height: 100%;
 }
 
-/*-------Chris' contact and location page--------*/
+/*-------Chris' form and location page--------*/
 
 .pink_girls {
     margin-top: 20px;
@@ -550,7 +554,6 @@ nav ul a:hover {
 
 #contact_us h2,
 .locations h2 {
-    text-align: center;
     font-weight: var(--fw-m);
     margin-top: 20px;
 }
@@ -558,25 +561,12 @@ nav ul a:hover {
 #contact_us p,
 .locations p {
     font-family: var(--primary-font);
-    /*    font-size: calc(var(--fs-base)* 1.4);*/
+    font-size: calc(var(--fs-base)* 1.4);
     margin: var(--spacer);
     text-align: left;
     padding: 0 20px;
     font-weight: var(--fw-l);
-}
 
-.our_locations {
-    border: solid 1px var(--primary-color);
-    border-radius: var(--border-radius);
-
-}
-#boysteamblue {
-    margin-top: calc(var(--spacer)*1.5);
-}
-
-.header_border {
-    border: solid 1px var(--accent-color);
-    border-radius: var(--border-radius);
 }
 
 .club_contact span {
@@ -584,6 +574,11 @@ nav ul a:hover {
     font-weight: var(--fw-b);
 }
 
+/*
+#contact_us, #club_director, #club_address {
+        background-color: #f4f4f4;
+    }
+*/
 .contact_form {
     padding: var(--spacer);
 }
@@ -601,7 +596,7 @@ nav ul a:hover {
 
 #fname,
 #lname,
-#email2,
+#email,
 #phone {
     height: 25px;
     width: 250px;
@@ -616,26 +611,12 @@ nav ul a:hover {
     font-weight: var(--fw-m);
 }
 
-.contact_form fieldset {
+fieldset {
     border: 2px solid var(--primary-color);
     margin: var(--spacer);
     border-radius: var(--border-radius);
     font-weight: var(--fw-b);
     padding: var(--spacer);
-}
-
-.contact_form fieldset legend {
-    text-transform: uppercase;
-}
-
-#contact_us p {
-    text-align: center;
-}
-
-.club_contact {
-    border: solid 1px var(--accent-color);
-    border-radius: var(--border-radius);
-    margin: calc(var(--spacer)*2);
 }
 
 
@@ -663,33 +644,13 @@ footer p {
 
 /*--------------------Hong's CSS---------------*/
 
-.classAndTeams h2 {
-    text-align: center;
-}
-
-.classAndTeams p {
-    max-width: 80%;
-    margin: auto;
-}
-
-
-.classAndTeams article p {
-    max-width: 100%;
-}
-
-.classAndTeams ul {
-    list-style: disc;
-    text-align: justify;
-}
-
-.classAndTeams a {
-    font-weight: var(--fw-m);
-}
-
-.classAndTeams iframe {
-    width: 100%;
-}
-
+/* styling for Class&Teams page */
+.classAndTeams h2 { text-align: center;}
+.classAndTeams p { max-width: 80%;margin: auto;}
+.classAndTeams article p { max-width: 100%;}
+.classAndTeams ul { list-style: disc;text-align: justify;}
+.classAndTeams li { font-size: var(--fs-base);}
+.classAndTeams a { font-weight: var(--fw-m);}
 /* pointer for image bar */
 .girlsTeamFall_img,
 .girlsTeamSpring_img,
@@ -697,14 +658,25 @@ footer p {
 .boysTeamTournaments_img {
     cursor: pointer;
 }
-
 /* spacing at the bottom */
 .boys_team,
 .girls_team {
     margin-bottom: var(--spacer);
 }
+/end of styling for Class&Teams page/
 
-/*-------------------------------------------End Hong's CSS---------------*/
+/* styling for Schedule page */
+.classAndTeams_title p, .main_schedule p {
+    text-align: center;
+}
+.girls_schedule, .boys_schedule {
+    width: 200px;
+    margin-bottom: calc(var(--spacer)*2);
+}
+.main_schedule iframe { width: 100%;margin-bottom: var(--spacer);}
+/end of styling for Schedule page/
+
+/*-------------------------------End Hong's CSS---------------*/
 
 /*---------------------------Ceren's CSS--------------------------*/
 .grid-container {
@@ -715,6 +687,8 @@ margin-top: 80px;
 position: relative;
 }
 
+       
+
 .grid-box {
     color: black;
     padding: 10px;
@@ -723,11 +697,12 @@ position: relative;
     width: 200px;
     margin: auto;
     position: relative;
-}
+} 
 
 .about-grid {
     order: 3;
 }
+    
 
 .about-grid-first {
     display: grid;
@@ -743,6 +718,10 @@ position: relative;
     grid-template-columns: 1fr;
     place-items: center;
     margin: 50px;
+    position: relative;
+}
+
+
 
 .about-blue-aside {
     display: flex;
@@ -788,7 +767,7 @@ position: relative;
     max-width: 1000px;
     margin: 2px;
     padding: 50px;
-    
+
 }
 
 .grid_registration {
@@ -833,6 +812,7 @@ position: relative;
 
 }
 
+ 
 
 /*----------payment-----------*/
 .card_image {
@@ -1008,7 +988,8 @@ position: relative;
 
 .aid_Aside_pR {
     top: 50%;
-    left: 50% width: 80%;
+    left: 50%
+    width: 80%;
     text-align: center;
 }
 
@@ -1058,7 +1039,7 @@ position: relative;
 
 }
 
-.faq li {
+.faq li{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1079,7 +1060,7 @@ position: relative;
     border: solid 1px var(--text-color);
     margin: 20px;
     padding-bottom: 30px;
-
+    
 }
 
 /*-----------------------End Cindy's Code--------------------------*/
@@ -1089,19 +1070,15 @@ position: relative;
 
 /*------Media Queries------------*/
 
+
 @media screen and (min-width: 980px) {
 
-    /* never show hamburger close box in wide screen */
-    #checkbox:checked ~ label .menuIconClose {
-        display: none;
+    /*fly out menu */
+    nav ul li:hover .fly_out,
+    .fly_out:hover {
+        display: block;
     }
-    
-    /* force menu to flex in widescreen, 
-    regardless of checkbox state*/
-    #checkbox:checked ~ nav ul.outer {
-        display: flex;
-    }
-    
+
     .menuIcon {
         display: none;
     }
@@ -1118,7 +1095,7 @@ position: relative;
         height: auto;
     }
 
-    nav ul.outer {
+    nav ul {
         max-height: 100px;
         text-align: right;
         display: flex;
@@ -1137,38 +1114,10 @@ position: relative;
         border-bottom: none;
     }
 
-    nav ul.outer > a:hover {
+    nav ul a:hover {
         background-color: var(--neutral-lt-color);
         color: var(--accent-color);
     }
-
-
-    /*-----------fly-out menu, only shown in wide screen-----------*/
-
-    .fly_out {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        font-size: 1.6em;
-        font-size: calc(var(--fs-base)*1.1);
-        z-index: 1;
-        background-color: var(--primary-color);
-    }
-
-    .fly_out li {
-        color: var(--text-color);
-        background-color: var(--primary-color);
-        padding: .2em 1.4em;
-        border-bottom: solid 1px var(--accent-color);
-        text-align: left;
-        cursor: pointer;
-    }    
-    nav ul li:hover .fly_out,
-    .fly_out:hover {
-        display: block;
-    }
-
-    /*    end fly-out  */
 
     .first2_art {
         display: grid;
@@ -1202,7 +1151,6 @@ position: relative;
 
     .benef {
         order: 4;
-        margin-bottom: calc(var(--spacer)*2);
     }
 
     .blue_Aside {
@@ -1271,6 +1219,7 @@ position: relative;
     .our_locations {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        border: solid 1px var(--primary-color);
         margin-top: 10px;
     }
 
@@ -1315,36 +1264,41 @@ position: relative;
     /*------------End Cindy's Media Query-----*/
 
     /*----------------Hong's Media query------------------------*/
-
+ /* font size in p,ul,a */
     .classAndTeams p,
     .classAndTeams ul,
     .classAndTeams a {
         font-size: calc(var(--fs-base)*1.5);
         max-width: 900px;
     }
-
+    /* font size in li */
+    .classAndTeams li {
+        font-size: calc(var(--fs-base)*1.3);
+    }
     .classAndTeams article {
         max-width: 900px;
     }
-
+    /* Styling for Class&Teams page */
     .classAndTeams .imgBar {
         max-height: 100px;
     }
-
-    /* content style for Girls Fall Season*/
+    /* Styling for Class&Teams page */
     .girls_team .fall_season {
         display: flex;
         gap: 3rem;
         align-items: center;
     }
-
+    /* Styling for Class&Teams page */
     .girls_team .fall_season img {
         max-width: 40%;
     }
-
+    /* Styling for Class&Teams page */
     .girlsAllAges_img {
         order: 1;
     }
+    
+    /*------------End Hong's Media Query-----*/
+    
 /*---------------Ceren's Media Query------------*/
     .about-grid-first {
         display: grid;

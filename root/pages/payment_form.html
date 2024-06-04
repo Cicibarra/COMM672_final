@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Final Project</title>
+    <title>Payment Form Page</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,21 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/test.css">
-    
-    <!-- jQuery----->
-    <script src="scripts/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-         $(".FAQ_list p").hide();
-          
-          $(".FAQ_list h3").click(function(){
-              $(".FAQ_list p").hide();
-              $(this).siblings().show();
-          });
-          
-      }); 
-    </script>
   </head>
 
   <body class="home_Body">
@@ -37,6 +22,7 @@
             <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
             <input type="checkbox" id="checkbox">
             <nav>
+
                   <ul class="outer">
                       <li><a href="about.html">About</a></li>
                       <li><a href="locations.html">Locations</a></li>
@@ -52,16 +38,18 @@
                       <li><a href="contact.html">Contact</a></li>
                   </ul>
               </nav>
+
+          
             <label for="checkbox">
                 <i class="fa-solid fa-bars menuIcon"></i>
                 <i class="fa-solid fa-xmark menuIconClose"></i>
             </label>
         </section>
         <section class="btns">
-            <a class="In_btn" href="pages/about.html">
+            <a class="In_btn" href="about.html">
                 Learn More
             </a>
-            <a class="Up_btn" href="pages/sign_up_form.html">
+            <a class="Up_btn" href="sign_up_form.html">
                 Sign Up
             </a>
         </section>
@@ -118,11 +106,11 @@
 
         <fieldset id="boys_girls">
             <legend>Pricing Options</legend>
-            <section class="plans form-grid">
+            <section class="form-grid">
                 <section>
                     <input type="radio" id="boys" name="boys_girls" value="boys">
                     <label for="boys">Montly Plan $149</label>
-                    <section class="plan" id="plan_m">
+                    <section>
                         <h3>Monthly Plan</h3>
                         <h2>$149</h2>
                         
@@ -140,7 +128,7 @@
                 <section>
                     <input type="radio" id="girls" name="boys_girls" value="girls">
                     <label for="girls">Yearly Plan $1500</label>
-                    <section class="plan" id="plan_y">
+                    <section>
                         <h3>Yearly Plan</h3>
                         <h2>$1500</h2>
                         
@@ -193,9 +181,11 @@
             
 
             <label for="phone">Accepted Card</label>
-            <br>
-            <img src="../images/payment_logo.png" alt="LJVC_logo" class="logo"> 
-            <br>
+
+            </br>
+            <img src="../images/payment%20logo.png" alt="LJVC_logo" class="logo"> 
+            </br>
+
             <section class="plans form-grid">
                 <label for="email">Credit Card Number </label>
                 <input type="email" id="email" name="email" value="" required placeholder="Enter card number" type="text">
@@ -217,7 +207,7 @@
     </section>
 </section>  
 
-<a class="proceed_to_checkout_btn" href="pages/contact.html">Proceed to Checkout</a>
+<a class="proceed_to_checkout_btn" href="contact.html">Proceed to Checkout</a>
 
 
 

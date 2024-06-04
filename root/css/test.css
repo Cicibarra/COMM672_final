@@ -127,7 +127,7 @@ img {
 /*-----Nav-------*/
 nav {
     position: absolute;
-    top: 153px;
+    top: 155px;
     right: 0;
     width: 200px;
     background-color: var(--primary-color);
@@ -688,12 +688,14 @@ footer p {
     width: 200px;
     margin-bottom: calc(var(--spacer)*2);
 }
-.main_schedule iframe { width: 100%;margin-bottom: var(--spacer);}
-/end of styling for Schedule page/
+.main_schedule iframe { width: 100%;margin-bottom: var(--spacer);
+}
+/*end of styling for Schedule page/
 
 /*-------------------------------End Hong's CSS---------------*/
 
 /*---------------------------Ceren's CSS--------------------------*/
+
 .grid-container {
 display: grid;
 grid-template-columns: repeat(2, 2fr);
@@ -707,7 +709,7 @@ position: relative;
 .grid-box {
     color: black;
     padding: 10px;
-    box-shadow: grey;
+    box-shadow: var(--shadow);
     text-align: left;
     width: 200px;
     margin: auto;
@@ -773,7 +775,7 @@ position: relative;
 }
 
 .meet-our-team {
-    background-color:solid 2px var(--neutral-lt-color);
+    background-color: var(--neutral-lt-color);
     border: solid 2px var(--neutral-lt-color);
     /*padding: 40px;*/
     border: solid 2px rgb(247, 243, 243);
@@ -1003,7 +1005,7 @@ position: relative;
 
 .aid_Aside_pR {
     top: 50%;
-    left: 50%
+    left: 50%;
     width: 80%;
     text-align: center;
 }

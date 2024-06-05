@@ -48,6 +48,7 @@ header {
 
 main {
     margin: auto;
+    /*    max-width: 80%;*/
 }
 
 article {
@@ -105,11 +106,10 @@ img {
     box-shadow: var(--shadow);
 }
 
-
 .logo {
     width: 180px;
     box-shadow: none;
-    margin-bottom: 0;
+
 }
 
 /*--------menu-----------*/
@@ -128,12 +128,13 @@ img {
 nav {
     position: absolute;
     top: 155px;
+    /*    left: 0;*/
     right: 0;
     width: 200px;
     background-color: var(--primary-color);
 }
 
-nav ul.outer {
+nav ul {
     max-height: 0;
     overflow: hidden;
     transition: all .5s;
@@ -153,22 +154,9 @@ nav ul a {
 }
 
 nav ul a:hover {
-/*    background-color: var(--primary-color);*/
+    background-color: var(--primary-color);
     color: var(--accent-color);
 }
-
-
-.fly_out li {
-/*    text-align:right;*/
-    border-bottom: none;
-}
-
-.fly_out li a::before {
-    content: "> ";
-    margin-left: 10px;
-}
-
-
 
 /*-----hamburger and close X ---------*/
 .menuIcon,
@@ -188,7 +176,7 @@ nav ul a:hover {
 
 #checkbox:checked ~ nav ul.outer {
     display: block;
-    max-height: 640px;
+    max-height: 440px;
     transition: all .5s;
 }
 
@@ -200,7 +188,25 @@ nav ul a:hover {
     display: block;
 }
 
+/*-----------fly-out-----------*/
 
+.fly_out {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    font-size: 1.6em;
+    font-size: calc(var(--fs-base)*1.1);
+    z-index: 1;
+    background-color: var(--primary-color);
+}
+
+.fly_out li {
+    color: var(--text-color);
+    padding: .2em 1.4em;
+    border-bottom: solid 1px var(--accent-color);
+    text-align: left;
+    cursor: pointer;
+}
 
 /*-------- hero cta-------*/
 .hero_cta {
@@ -214,7 +220,7 @@ nav ul a:hover {
 
 .hero_h1 {
     line-height: calc(var(--line-h)* .8);
-    margin: calc(var(--spacer)*2);
+/*    margin: calc(var(--spacer)*2);*/
     text-align: center;
     text-shadow: var(--shadow);
     margin-bottom: 10px
@@ -231,6 +237,8 @@ nav ul a:hover {
     font-weight: 400;  
     
 }
+/*------First two articles------*/
+ 
 
 
 
@@ -332,16 +340,16 @@ nav ul a:hover {
 .FAQ_sec h1 {
     text-align: center;
     font-size: calc(var(--fs-base) * 3.5);
-    padding: 60px;
-    margin-top: 40px;
-    text-shadow: none;
-    font-weight: 600;
+    padding: 20px;
+    margin-top: 90px;
+
 }
 
 .FAQ_sec h2 {
     text-align: center;
-    font-size: 3em;
-    font-weight: var(--fw-b);
+    font-size: 2.3em;
+    font-weight: 500;
+
 }
 
 .FAQ_sec p {
@@ -356,14 +364,12 @@ nav ul a:hover {
 
 .FAQ_sec li {
     border-top: solid 1px var(--text-color);
-    margin: 40px 40px;
+    margin: 40px 50px;
     list-style-type: none;
-    max-width: 80%;
-    text-align: center;
 }
 
 .FAQ_list h3 {
-    font-size: calc(var(--fs-base)* 1.2);
+    font-size: calc(var(--fs-base)* 1.6);
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -379,7 +385,6 @@ nav ul a:hover {
 
 .FAQ_list p {
     text-align: left;
-    font-size: calc(var(--fs-base)* 1.2);
 
 }
 
@@ -407,7 +412,7 @@ nav ul a:hover {
     color: var(--primary-color);
 }
 
-/*---- General buttons------*/
+/*----buttons------*/
 
 .btns {
     display: flex;
@@ -548,7 +553,6 @@ nav ul a:hover {
 
 #contact_us h2,
 .locations h2 {
-    text-align: center;
     font-weight: var(--fw-m);
     margin-top: 20px;
 }
@@ -556,25 +560,12 @@ nav ul a:hover {
 #contact_us p,
 .locations p {
     font-family: var(--primary-font);
-/*    font-size: calc(var(--fs-base)* 1.4);*/
+    font-size: calc(var(--fs-base)* 1.4);
     margin: var(--spacer);
     text-align: left;
     padding: 0 20px;
     font-weight: var(--fw-l);
 
-}
-.our_locations {
-    border: solid 1px var(--primary-color);
-    border-radius: var(--border-radius);
-}
-
-#boysteamblue {
-    margin-top: calc(var(--spacer)*1.5);
-}
-
-.header_border {
-    border: solid 1px var(--accent-color);
-    border-radius: var(--border-radius);
 }
 
 .club_contact span {
@@ -582,6 +573,11 @@ nav ul a:hover {
     font-weight: var(--fw-b);
 }
 
+/*
+#contact_us, #club_director, #club_address {
+        background-color: #f4f4f4;
+    }
+*/
 .contact_form {
     padding: var(--spacer);
 }
@@ -599,7 +595,7 @@ nav ul a:hover {
 
 #fname,
 #lname,
-#email2,
+#email,
 #phone {
     height: 25px;
     width: 250px;
@@ -614,26 +610,14 @@ nav ul a:hover {
     font-weight: var(--fw-m);
 }
 
-.contact_form fieldset {
+fieldset {
     border: 2px solid var(--primary-color);
     margin: var(--spacer);
     border-radius: var(--border-radius);
     font-weight: var(--fw-b);
     padding: var(--spacer);
 }
-.contact_form fieldset legend {
-    text-transform: uppercase;
-}
 
-#contact_us p {
-    text-align: center;
-}
-
-.club_contact {
-    border: solid 1px var(--accent-color);
-    border-radius: var(--border-radius);
-    margin: calc(var(--spacer)*2);
-}
 
 /*----------footer-----------*/
 footer {
@@ -659,13 +643,33 @@ footer p {
 
 /*--------------------Hong's CSS---------------*/
 
-/* styling for Class&Teams page */
-.classAndTeams h2 { text-align: center;}
-.classAndTeams p { max-width: 80%;margin: auto;}
-.classAndTeams article p { max-width: 100%;}
-.classAndTeams ul { list-style: disc;text-align: justify;}
-.classAndTeams li { font-size: var(--fs-base);}
-.classAndTeams a { font-weight: var(--fw-m);}
+.classAndTeams h2 {
+    text-align: center;
+}
+
+.classAndTeams p {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.classAndTeams article p {
+    max-width: 100%;
+}
+
+.classAndTeams ul {
+    list-style: disc;
+    text-align: justify;
+}
+
+.classAndTeams a {
+    font-weight: var(--fw-m);
+}
+
+.classAndTeams iframe {
+    width: 100%;
+}
+
 /* pointer for image bar */
 .girlsTeamFall_img,
 .girlsTeamSpring_img,
@@ -673,224 +677,32 @@ footer p {
 .boysTeamTournaments_img {
     cursor: pointer;
 }
+
 /* spacing at the bottom */
-.boys_team,
-.girls_team {
+.boys_team, .girls_team {
     margin-bottom: var(--spacer);
 }
-/*end of styling for Class&Teams page*/
 
-/* styling for Schedule page */
-.classAndTeams_title p, .main_schedule p {
-    text-align: center;
-}
-.girls_schedule, .boys_schedule {
-    width: 200px;
-    margin-bottom: calc(var(--spacer)*2);
-}
-.main_schedule iframe { width: 100%;margin-bottom: var(--spacer);
-}
-/*end of styling for Schedule page/
-
-/*-------------------------------End Hong's CSS---------------*/
+/*-------------------------------------------End Hong's CSS---------------*/
 
 /*---------------------------Ceren's CSS--------------------------*/
 
-.grid-container {
-display: grid;
-grid-template-columns: repeat(2, 2fr);
-grid-auto-rows: unset;
-margin-top: 80px;
-position: relative;
-}
-
-.payment_form fieldset {
-    min-width: 430px;
-}
-
-.member_form {
-    max-width: 100%;
-}
-
-       
-
-.grid-box {
-    color: var(--text-color);
-    padding: 10px;
-    box-shadow: var(--shadow);
-    text-align: left;
-    width: 200px;
-    margin: auto;
-    position: relative;
-} 
-
-.about-grid {
-    order: 3;
-}
-    
-
-.about-grid-first {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: unset;
-    place-items: center;
-    margin: 50px;
-     
-}
-
-.about-grid-last {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    margin: 50px;
-    position: relative;
-}
 
 
 
-.about-blue-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto; 
-    background-color: var(--primary-color);
-    color: var(--neutral-lt-color);
-/*    margin: var(--spacer-dbl) 0;*/
-    border-bottom: solid 10px var(--accent-color);
-    border-top: solid 10px var(--accent-color);
-/*    padding: calc(var(--spacer)* 2);    */
-    height: 400px;
-}
-
-.banner {
-    text-align: center;
-    text-align: center;
-    max-width: 600px;
-    border-bottom: solid 2px var(--neutral-lt-color);
-    border-top: solid 2px var(--neutral-lt-color);
-    padding: calc(var(--spacer)* 2);
-}
-
-.empower-second {
-    text-align: center;
-    text-align: center;
-    max-width: 900px;
-    border-bottom: solid 2px var(--neutral-lt-color);
-    border-top: solid 2px var(--neutral-lt-color);    
-    margin: auto;
-    padding: 40px;
-}
-
-.meet-our-team {
-    background-color: var(--neutral-lt-color);
-    border: solid 2px var(--neutral-lt-color);
-    /*padding: 40px;*/
-    border: solid 2px rgb(247, 243, 243);
-    margin-top: auto;
-    box-shadow: 10px 10px 8px var(--neutral-dk-color);
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px;
-
-}
-
-.about_img {
-        width: 100%;
-        height: auto;
-        box-shadow: var(--shadow);
-        margin: 20px;
-    
-}
-
-.fab {
--webkit-font-smoothing: antialiased;
-display: var(--fa-display, inline-block);
-font-style: normal;
-font-variant: normal;
-line-height: 1;
-text-rendering: auto;
-text-decoration: none;
-}
-
-.grid_registration {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-    margin: 60px;
-    grid-auto-rows: 80px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-        
-
-.form-container {
-    max-width: 258px; 
-}
 
 
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 1rem; 
-}
+/*---------------------*/
 
 
-.form-label {
-    text-align: right;
-    display: block;
-    clear: both;
-    width: 100%;
-}
 
 
-.form-input {
-    width: 100%; 
-    padding: 0.5rem;
-    border: 1px solid var(--neutral-lt-color);
-    border-radius: 0.25rem;
-    display: block;
-    clear: both;
 
-}
-
- 
-
-/*----------payment-----------*/
-.card_image {
-    height: auto;
-    box-shadow: var(--shadow);
-}
-
-.payment_grid {
-    display: grid;
-    grid-template-columns: repeat(4fr, 1fr);
-}
-
-.proceed_to_checkout_btn {
-
-    border: solid 1px var(--text-color);
-    text-decoration: none;
-    box-shadow: var(--shadow);
-    width: 215px;
-    height: 35px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    color: var(--neutral-lt-color);
-    background-color: var(--primary-color); 
-    margin-bottom: 20px;
-}
 /*------------------------End Ceren's Code--------------------------*/
-
-
 
 /*------------------------Cindy's CSS----------------------------*/
 
-/*_____________prices & Registration CSS_____________*/
+/*_____________prices & Resgistration CSS_____________*/
 
 
 
@@ -1011,13 +823,11 @@ text-decoration: none;
     border-top: solid 10px var(--accent-color);
     padding: 60px;
     margin-top: 60px;
-    text-align: center;
 
 }
 
 .blue_Aside_pR h1 {
     color: var(--neutral-lt-color);
-
 }
 
 /*--------yellow border aside------*/
@@ -1044,7 +854,7 @@ text-decoration: none;
 /*---------Notes Price & resgistration--------*/
 .note_PR {
     padding-top: 90px;
-    max-width: 80%;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -1057,12 +867,12 @@ text-decoration: none;
 }
 
 /*----------------FAQ------------*/
-#faq_id h1 {
+.FAQ_sec h1 {
     margin-top: 20px;
     text-shadow: var(--shadow);
 }
 
-#faq_id h3 {
+.FAQ_sec h3 {
     padding-top: 60px;
     width: 80%;
     margin: auto;
@@ -1070,7 +880,7 @@ text-decoration: none;
     text-align: center;
 }
 
-#faq_id p {
+.FAQ_sec p {
     font-size: calc(var(--fs-base) * 1.1);
     font-weight: var(--fw-l);
     width: 80%;
@@ -1080,10 +890,6 @@ text-decoration: none;
 .faq {
     padding-top: 10px;
 
-}
-
-.faq li{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq h3 {
@@ -1098,15 +904,16 @@ text-decoration: none;
     margin: auto;
 }
 
-
-.FAQ_list_page li {
+.FAQ_list li {
     border: solid 1px var(--text-color);
     margin: 20px;
     padding-bottom: 30px;
-    
 }
 
-/*-----------------------End Cindy's Code--------------------------*/
+/*-------------------------End Cindy's Code-------------------------------*/
+
+
+
 
 
 
@@ -1114,18 +921,206 @@ text-decoration: none;
 /*------Media Queries------------*/
 
 
+.grid-container {
+display: grid;
+grid-template-columns: repeat(2, 2fr);
+grid-auto-rows: unset;
+margin-top: 80px;
+position: relative;
+}
+
+       
+
+.grid-box {
+    color: var(--text-color);
+    padding: 10px;
+    box-shadow: var(--neutral-dk-color);
+    text-align: left;
+    width: 200px;
+    margin: auto;
+    position: relative;
+} 
+
+.about-grid {
+    order: 3;
+}
+    
+
+.about-grid-first {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: unset;
+    place-items: center;
+    margin: 50px;
+     
+}
+
+
+@media screen and (min-width: 980px) {
+    .about-grid-first {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-auto-rows: unset;
+        place-items: center;
+        margin: 50px;
+         
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        grid-auto-rows: unset;
+        margin-top: 80px;
+        position: relative;
+        }
+
+}
+
+.about_img {
+    width: 100%;
+    height: auto;
+    box-shadow: var(--shadow);
+    margin: auto;
+}
+
+.about-grid-last {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 50px;
+    position: relative;
+}
+
+
+
+.about-blue-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; 
+    background-color: var(--primary-color);
+    color: var(--neutral-lt-color);
+/*    margin: var(--spacer-dbl) 0;*/
+    border-bottom: solid 10px var(--accent-color);
+    border-top: solid 10px var(--accent-color);
+/*    padding: calc(var(--spacer)* 2);    */
+    height: 400px;
+}
+
+.banner {
+    text-align: center;
+    text-align: center;
+    max-width: 600px;
+    border-bottom: solid 2px var(--neutral-lt-color);
+    border-top: solid 2px var(--neutral-lt-color);
+    padding: calc(var(--spacer)* 2);
+}
+
+.empower-second {
+    text-align: center;
+    text-align: center;
+    max-width: 900px;
+    border-bottom: solid 2px var(--neutral-lt-color);
+    border-top: solid 2px var(--neutral-lt-color);    
+    margin: auto;
+    padding: 60px;
+}
+
+.meet-our-team {
+    background-color:solid 2px var(--neutral-lt-color);
+    border: solid 2px var(--neutral-lt-color);
+    /*padding: 40px;*/
+    border: solid 2px rgb(247, 243, 243);
+    margin-top: auto;
+    box-shadow: var(--shadow);
+    max-width: 1000px;
+    margin: 2px;
+    padding: 50px;
+    
+
+}
+
+.grid_registration {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin: 60px;
+    grid-auto-rows: 80px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+        
+
+.form-container {
+    max-width: 258px; 
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 1rem; 
+}
+
+
+.form-label {
+    text-align: right;
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+
+.form-input {
+    width: 100%; 
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    display: block;
+    clear: both;
+
+}
+
+ 
+
+/*----------payment-----------*/
+.card_image {
+    height: auto;
+    box-shadow: var(--shadow);
+}
+
+.payment_grid {
+    display: grid;
+    grid-template-columns: repeat(4fr, 1fr);
+}
+
+.proceed_to_checkout_btn {
+
+    border: solid 1px var(--text-color);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    width: 215px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--neurtal-lt-color);
+    background-color: var(--primary-color); 
+    margin-bottom: 20px;
+}
+
+/*----------Ceren Css end-----------*/
+
 @media screen and (min-width: 980px) {
 
-    /*---------fly out menu -------------*/
-    /* never show hamburger close box in wide screen */
-    #checkbox:checked ~ label .menuIconClose {
-        display: none;
-    }
-    
-    /* force menu to flex in widescreen, 
-    regardless of checkbox state*/
-    #checkbox:checked ~ nav ul.outer {
-        display: flex;
+    /*fly out menu */
+    nav ul li:hover .fly_out,
+    .fly_out:hover {
+        display: block;
     }
 
     .menuIcon {
@@ -1139,12 +1134,12 @@ text-decoration: none;
     nav {
         position: relative;
         top: 0;
-        background-color: var(--neutral-lt-color);
+        background-color: var(--neurtal-lt-color);
         width: auto;
         height: auto;
     }
 
-    nav ul.outer {
+    nav ul {
         max-height: 100px;
         text-align: right;
         display: flex;
@@ -1163,40 +1158,10 @@ text-decoration: none;
         border-bottom: none;
     }
 
-    nav ul.outer > a:hover {
-        background-color: var(--neutral-lt-color);
+    nav ul a:hover {
+        background-color: var(--neurtal-lt-color);
         color: var(--accent-color);
     }
-    
-    /*-----------fly-out menu, only shown in wide screen-----------*/
-
-    .fly_out {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        font-size: 1.6em;
-        font-size: calc(var(--fs-base)*1.1);
-        z-index: 1;
-        background-color: var(--primary-color);
-    }
-
-    .fly_out li {
-        color: var(--text-color);
-        background-color: var(--primary-color);
-        padding: .2em 1.4em;
-        border-bottom: solid 1px var(--accent-color);
-        text-align: left;
-        cursor: pointer;
-    }    
-    nav ul li:hover .fly_out,
-    .fly_out:hover {
-        display: block;
-    }
-
-    /*    end fly-out  */
-    
-    
-    
 
     .first2_art {
         display: grid;
@@ -1230,7 +1195,23 @@ text-decoration: none;
 
     .benef {
         order: 4;
-        margin-bottom: calc(var(--spacer)*2);
+    }
+
+    .about1 {
+
+        order: 1;
+    }
+
+    .about_img {
+        order: 2;
+    }
+
+    .about2_img {
+        order: 3;
+    }
+
+    .about2 {
+        order: 4;
     }
 
     .blue_Aside {
@@ -1283,7 +1264,7 @@ text-decoration: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        background-color: var(--neutral-lt-color);
+        background-color: var(--neurtal-lt-color);
     }
 
     #contact_img {
@@ -1293,12 +1274,13 @@ text-decoration: none;
 
     #club_director,
     #club_address {
-        background-color: var(--neutral-lt-color);
+        background-color: var(--neurtal-lt-color);
     }
 
     .our_locations {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        border: solid 1px var(--primary-color);
         margin-top: 10px;
     }
 
@@ -1313,7 +1295,7 @@ text-decoration: none;
         border: solid 1px var(--primary-color);
     }
 
-    /*--------------------------------Cindy's Media query---------------------------*/
+    /*-------Cindy's Media query---*/
 
     .priceHero_img {
         max-width: 1000px;
@@ -1343,67 +1325,37 @@ text-decoration: none;
     /*------------End Cindy's Media Query-----*/
 
     /*----------------Hong's Media query------------------------*/
- /* font size in p,ul,a */
+
     .classAndTeams p,
     .classAndTeams ul,
     .classAndTeams a {
         font-size: calc(var(--fs-base)*1.5);
         max-width: 900px;
     }
-    /* font size in li */
-    .classAndTeams li {
-        font-size: calc(var(--fs-base)*1.3);
-    }
+
     .classAndTeams article {
         max-width: 900px;
     }
-    /* Styling for Class&Teams page */
+
     .classAndTeams .imgBar {
         max-height: 100px;
     }
-    /* Styling for Class&Teams page */
+
+    /* content style for Girls Fall Season*/
     .girls_team .fall_season {
         display: flex;
         gap: 3rem;
         align-items: center;
     }
-    /* Styling for Class&Teams page */
+
     .girls_team .fall_season img {
         max-width: 40%;
     }
-    /* Styling for Class&Teams page */
+
     .girlsAllAges_img {
         order: 1;
     }
-    
-    /*------------End Hong's Media Query-----*/
-    
-/*---------------Ceren's Media Query------------*/
-    .about-grid-first {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        grid-auto-rows: unset;
-        place-items: center;
-        margin: 50px;
-         
-    }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 4fr);
-        grid-auto-rows: unset;
-        margin-top: 80px;
-        position: relative;
-        }
-/*
-    .member_form {
-        max-width: 100%;
-    }
-*/
-    .member_blue_Aside {
-        display: block;
-        max-width: 100%;
-    }
 }
 
 

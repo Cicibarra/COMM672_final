@@ -5,48 +5,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Final Project</title>
+    <title>Payment Form Page</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/test2.css">
-    
-    <!-- jQuery----->
-    <script src="scripts/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-         $(".FAQ_list p").hide();
-          
-          $(".FAQ_list h3").click(function(){
-              $(".FAQ_list p").hide();
-              $(this).siblings().show();
-          });
-          
-      }); 
-    </script>
+    <link rel="stylesheet" href="../css/test.css">
   </head>
 
   <body class="home_Body">
 
     <header>
       <section class="menuWrap">
-          <a href="index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
+            <a href="../index.html"><img src="../images/LaJolla_Logo_cropped.png" alt="La Jolla Volleyball Club logo" class="logo"></a>
             <input type="checkbox" id="checkbox">
             <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="locations.html">Location</a></li>
-                    <li><a href="ClassesAndTeams.html">Classes & Teams</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="register_prices.html">Payment & Pricing</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+
+                  <ul class="outer">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="locations.html">Locations</a></li>
+                      <li><a href="ClassesAndTeams.html">Classes & Teams</a></li>
+                      <li><a href="schedule.html">Schedule</a></li>
+                      <li><a href="register_prices.html">Register & Pricing</a>
+                      <ul class="fly_out">
+                          <li><a href ="sign_up_form.html">Registration</a></li>
+                          <li><a href ="payment_form.html"> Payments</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="FAQ.html">FAQ</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+
+          
             <label for="checkbox">
                 <i class="fa-solid fa-bars menuIcon"></i>
                 <i class="fa-solid fa-xmark menuIconClose"></i>
@@ -69,7 +62,7 @@
         </h2>
     </section>  
 
-<section class="contact_form">
+<section class="contact_form payment_form">
     <form action="mailto:csherndon@yahoo.com" method="post" id="saveForm" class="contact_form">
         
         <fieldset id="contact_info">                
@@ -80,7 +73,7 @@
 
             
             <label for="email">Last Name </label>
-            <input type="email" id="email" name="email" value="" required placeholder="Last Name" type="text">
+            <input type="email" id="lname" name="email" value="" required placeholder="Last Name" type="text">
 
             
             <label for="lname">Student ID </label>
@@ -88,11 +81,11 @@
 
             
             <label for="email">Email </label>
-            <input type="email" id="email" name="email" value="" required placeholder="email@example.com" type="text">
+            <input type="email" id="lname" name="email" value="" required placeholder="email@example.com" type="text">
 
             
             <label for="phone">Phone </label>
-            <input type="tel" id="phone" name="phone" value="" placeholder="(000) 000-0000" type="number">
+            <input type="tel" id="lname" name="phone" value="" placeholder="(000) 000-0000" type="number">
 
             
             <label for="lname">Parent/Guardian Name </label>
@@ -100,13 +93,13 @@
 
             
             <label for="email">Parent/Guardian Last Name </label>
-            <input type="email" id="email" name="email" value="" required placeholder="Last Name" type="text">
+            <input type="email" id="lname" name="email" value="" required placeholder="Last Name" type="text">
 
             <label for="email">Parent/Guardian Email </label>
-            <input type="email" id="email" name="email" value="" required placeholder="email@example.com" type="text">
+            <input type="email" id="lname" name="email" value="" required placeholder="email@example.com" type="text">
 
             <label for="phone">Parent/Guardian Phone </label>
-            <input type="tel" id="phone" name="phone" value="" placeholder="(000) 000-0000" type="number">
+            <input type="tel" id="lname" name="phone" value="" placeholder="(000) 000-0000" type="number">
 
             </section>                
         </fieldset>
@@ -161,7 +154,7 @@
 
                 
                 <label for="email">Email </label>
-                <input type="email" id="email" name="email" value="" required placeholder="Enter email" type="text">
+                <input type="email" id="lname" name="email" value="" required placeholder="Enter email" type="text">
 
                 
                 <label for="lname">Address </label>
@@ -169,11 +162,11 @@
 
                 
                 <label for="email">City </label>
-                <input type="email" id="email" name="email" value="" required placeholder="Enter City" type="text">
+                <input type="email" id="lname" name="email" value="" required placeholder="Enter City" type="text">
 
                 
                 <label for="phone">Zip Code</label>
-                <input type="tel" id="phone" name="phone" value="" placeholder="Zip code" type="number">
+                <input type="tel" id="lname" name="phone" value="" placeholder="Zip code" type="number">
 
                 
                 <label for="lname">State </label>
@@ -188,21 +181,23 @@
             
 
             <label for="phone">Accepted Card</label>
+
             </br>
-            <img src="../images/payment_logo.png" alt="LJVC_logo" class="logo"> 
+            <img src="../images/payment_logo.png" alt="payment_logo" class="logo"> 
             </br>
+
             <section class="plans form-grid">
                 <label for="email">Credit Card Number </label>
-                <input type="email" id="email" name="email" value="" required placeholder="Enter card number" type="text">
+                <input type="email" id="lname" name="email" value="" required placeholder="Enter card number" type="text">
 
                 <label for="phone">Expration Month </label>
-                <input type="tel" id="phone" name="phone" value="" placeholder="Enter Month" type="number">
+                <input type="tel" id="lname" name="phone" value="" placeholder="Enter Month" type="number">
 
                 <label for="phone">Expration Year </label>
-                <input type="tel" id="phone" name="phone" value="" placeholder="Enter Year" type="number">
+                <input type="tel" id="lname" name="phone" value="" placeholder="Enter Year" type="number">
 
                 <label for="phone">CVV </label>
-                <input type="tel" id="phone" name="phone" value="" placeholder="CVV" type="number">
+                <input type="tel" id="lname" name="phone" value="" placeholder="CVV" type="number">
 
             </section>
 
@@ -234,25 +229,20 @@
 
 
 <footer class="foot_sec">
-    <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
+        <p> &copy; 2024 La Jolla Volleyball Club. All rights reserved.</p>
 
-    <section class="foot_ico">
-        <a class="f_ico" href="#">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a class="t_ico" href="#">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a class="ig_ico" href="#">
-            <i class="fab fa-instagram">
-            </i>
-        </a>
-        <a class="li_ico" href="#">
-            <i class="fab fa-linkedin-in">
-            </i>
-        </a>
-    </section>
-</footer>
+        <section class="foot_ico">
+            <a class="f_ico" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i></a>
+            <a class="t_ico" href="https://x.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+            <a class="ig_ico" href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram" ></i></a>
+            <a class="li_ico" href="https://www.linkedin.com/" target="_blank">
+                <i class="fab fa-linkedin-in"></i></a>
+        </section>
+
+    </footer>
 
 </body>  
 </html>  
